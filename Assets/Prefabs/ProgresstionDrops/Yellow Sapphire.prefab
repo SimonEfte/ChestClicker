@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7671949527749443453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7671949527749443330}
+  - component: {fileID: 7671949527749443329}
+  - component: {fileID: 7671949527749443328}
+  - component: {fileID: 7671949527749443331}
+  - component: {fileID: 5388965778097463006}
+  - component: {fileID: 8233361323019064059}
+  m_Layer: 5
+  m_Name: Yellow Sapphire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7671949527749443330
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5669, y: 0.5669, z: 0.5669}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -688.5, y: 48}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7671949527749443329
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_CullTransparentMesh: 1
+--- !u!114 &7671949527749443328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b83a0cd27381645c097ab88e868d17e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!60 &7671949527749443331
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 45.48899, y: 16.822123}
+      - {x: 46.75604, y: 29.924812}
+      - {x: 44.110386, y: 38.531887}
+      - {x: 38.403145, y: 44.456867}
+      - {x: 30.077795, y: 47.066162}
+      - {x: 21.757593, y: 46.285698}
+      - {x: 11.034701, y: 43.04205}
+      - {x: 2.7998128, y: 39.71005}
+      - {x: -6.669504, y: 34.392548}
+      - {x: -15.802063, y: 26.359169}
+      - {x: -27.332092, y: 14.978472}
+      - {x: -36.75815, y: 1.415781}
+      - {x: -42.25128, y: -7.566651}
+      - {x: -45.51462, y: -19.231112}
+      - {x: -46.830097, y: -28.961933}
+      - {x: -44.41205, y: -37.672405}
+      - {x: -40.842434, y: -43.08406}
+      - {x: -35.48052, y: -46.14284}
+      - {x: -28.912622, y: -48.360195}
+      - {x: -21.403603, y: -47.4315}
+      - {x: -8.776411, y: -43.88678}
+      - {x: 2.4436812, y: -37.952274}
+      - {x: 14.912461, y: -29.758345}
+      - {x: 21.836174, y: -22.151766}
+      - {x: 31.365915, y: -11.644279}
+      - {x: 39.14486, y: 0.30901712}
+--- !u!50 &5388965778097463006
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &8233361323019064059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671949527749443453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c33f342e6b57443aeec7dddd1cabda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetGameobjectItemBar: {fileID: 0}
+  targetGameObjectItemBarName: ItemsDropBar
+  targetGameObjectItemBarNameMOBILE: TreasureMobileBTN
+  miniChestMove: 0
+  audioManagerObject: {fileID: 0}
+  audioManager: {fileID: 0}
+  rigidbodyTreasure: {fileID: 0}
+  isQuartz: 0
+  isAmethyst: 0
+  isYellowTopaz: 0
+  isAlbite: 0
+  isRedGarnet: 0
+  isAquamarine: 0
+  isYellowSapphire: 0
+  isPinkTourmaline: 0
+  isAdventurine: 0
+  isRedRuby: 0
+  isDiamond: 0
+  isGrandidierite: 0
+  isVioletCrystal: 0
+  isAkoyaPearl: 0
+  isPurpleRupee: 0
+  isEmerald: 0
+  isGreenDiamond: 0
+  isFireOpal: 0
+  isGemSilica: 0
+  isPinkPlort: 0
+  isGoldenSeaPearl: 0
+  isKyanite: 0
+  isBlackOpal: 0
+  isPainite: 0
+  isTanzanite: 0
+  isAstralium: 0
+  isElysiumPrism: 0
+  isAerhfireOpal: 0
+  isEldrichStarstone: 0
+  isChonolish: 0
+  isSideriumEssence: 0
+  isQuasarite: 0
+  isRuadiantNovaStone: 0
+  isSolumiumShard: 0
+  isLockPick: 0
+  isHammer: 0
+  isKey: 0
+  isGoldenTouch: 0
+  isLootPotion: 0
+  isXPPotion: 0
+  isDamagePotion: 0
+  isScroll: 0
+  isGauntlet: 0
+  isElixir: 0
+  isRelic: 0
+  isTreasurePotion: 0
+  isKnife: 0
+  moveToString: ItemsBar
+  isMoving: 0
