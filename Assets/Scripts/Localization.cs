@@ -10,6 +10,7 @@ public class Localization : MonoBehaviour
     //Barrel hover inside UpdateGame
 
     //Add this to japan font ホ
+    public SpecialUpgradesButtons specialScript;
 
     public static int EnglishLanguageChosen, RussianLanguageChosen, JapaneseLanguageChosen, ChineseLanguageChosen, KoreanLanguageChosen;
 
@@ -1618,6 +1619,8 @@ public class Localization : MonoBehaviour
         EnglishLanguageChosen = 1;
         ChineseLanguageChosen = 0;
         KoreanLanguageChosen = 0;
+
+        if (PlaceMobileButtons.isMobile == true) { ChangeMobileText(); }
 
         PlayerPrefs.SetInt("SaveEnglish", EnglishLanguageChosen);
         PlayerPrefs.SetInt("SaveRussian", RussianLanguageChosen);
@@ -4009,6 +4012,8 @@ public class Localization : MonoBehaviour
         ChineseLanguageChosen = 0;
         KoreanLanguageChosen = 0;
 
+        if (PlaceMobileButtons.isMobile == true) { ChangeMobileText(); }
+
         PlayerPrefs.SetInt("SaveEnglish", EnglishLanguageChosen);
         PlayerPrefs.SetInt("SaveRussian", RussianLanguageChosen);
         PlayerPrefs.SetInt("SaveJapanese", JapaneseLanguageChosen);
@@ -6369,6 +6374,8 @@ public class Localization : MonoBehaviour
         ChineseLanguageChosen = 0;
         KoreanLanguageChosen = 0;
 
+        if (PlaceMobileButtons.isMobile == true) { ChangeMobileText(); }
+
         PlayerPrefs.SetInt("SaveEnglish", EnglishLanguageChosen);
         PlayerPrefs.SetInt("SaveRussian", RussianLanguageChosen);
         PlayerPrefs.SetInt("SaveJapanese", JapaneseLanguageChosen);
@@ -6797,6 +6804,7 @@ public class Localization : MonoBehaviour
         for (int i = 0; i < 17; i++)
         {
             itemsLevelUp_text[i].text = "アップグレード"; itemsLevelUp_text[i].font = japaneseSemiBold; itemsLevelUp_text[i].fontSize = 22;
+            if(PlaceMobileButtons.isMobile  == true) { itemsLevelUp_text[i].fontSize = 16; }
         }
 
         goldenTouchBuff.text = "<color=yellow>+6-10金貨ドロップ"; goldenTouchBuff.font = japaneseBoldOutline; goldenTouchBuff.fontSize = 10;
@@ -6807,6 +6815,7 @@ public class Localization : MonoBehaviour
         shop2_text.text = "ショップ"; shop2_text.font = japaneseSemiBold; shop2_text.fontSize = 40;
         items_text.text = "アイテム"; items_text.font = japaneseSemiBold; items_text.fontSize = 50;
         lockpick_text.text = "ロックピック"; lockpick_text.font = japaneseSemiBold; lockpick_text.fontSize = 29;
+        if (PlaceMobileButtons.isMobile == true) { lockpick_text.fontSize = 22; }
         lockpick2_text.text = "ロックピック"; lockpick2_text.font = japaneseSemiBold; lockpick2_text.fontSize = 25;
         lockpickItemBonus_text.text = "アイテムボーナス：ロックピックで胸を開いたときに宝が落ちる可能性はわずかに小さいです"; lockpickItemBonus_text.font = japaneseBold; lockpickItemBonus_text.fontSize = 21;
 
@@ -6815,22 +6824,27 @@ public class Localization : MonoBehaviour
         hammerItemBonus_text.text = "アイテムボーナス：ハンマーを使用している間にクリティカルヒットを取得した場合、1つの金貨は35％の確率で出現します"; hammerItemBonus_text.font = japaneseBold; hammerItemBonus_text.fontSize = 21;
 
         lootPotion_text.text = "戦利品ポーション"; lootPotion_text.font = japaneseSemiBold; lootPotion_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { lootPotion_text.fontSize = 17; }
         lootPotion2_text.text = "戦利品ポーション"; lootPotion2_text.font = japaneseSemiBold; lootPotion2_text.fontSize = 22;
         lootPotionItemBonus_text.text = "アイテムボーナス：このポーションがアクティブである間に受け取った宝物は、値が倍増する+5％のチャンスを持っています"; lootPotionItemBonus_text.font = japaneseBold; lootPotionItemBonus_text.fontSize = 19;
 
         damagePotion_text.text = "ダメージポーション"; damagePotion_text.font = japaneseSemiBold; damagePotion_text.fontSize = 20;
+        if (PlaceMobileButtons.isMobile == true) { damagePotion_text.fontSize = 15; }
         damagePotion2_text.text = "ダメージポーション"; damagePotion2_text.font = japaneseSemiBold; damagePotion2_text.fontSize = 19;
         damagePotionItemBonus_text.text = "アイテムボーナス:アクティブ中に+2%のクリティカルチャンスと+50%のクリティカルダメージを与える"; damagePotionItemBonus_text.font = japaneseBold; damagePotionItemBonus_text.fontSize = 19;
 
         xpPotion_text.text = "XPポーション"; xpPotion_text.font = japaneseSemiBold; xpPotion_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { xpPotion_text.fontSize = 22; }
         xpPotion2_text.text = "XPポーション"; xpPotion2_text.font = japaneseSemiBold; xpPotion2_text.fontSize = 25;
         xpPotionItemBonus_text.text = "アイテムボーナス：XPが獲得されるたびに、0.1％のチャンスが+1スキルポイントを得ることができます"; xpPotionItemBonus_text.font = japaneseBold; xpPotionItemBonus_text.fontSize = 21;
 
         goldenTouch_text.text = "ゴールデンタッチ"; goldenTouch_text.font = japaneseSemiBold; goldenTouch_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { goldenTouch_text.fontSize = 17; }
         goldenTouch2_text.text = "ゴールデンタッチ"; goldenTouch2_text.font = japaneseSemiBold; goldenTouch2_text.fontSize = 21;
         goldenTouchItemBonus_text.text = "アイテムボーナス：ゴールデンタッチがアクティブである間、宝物は値が倍増する+10％のチャンスを持っています"; goldenTouchItemBonus_text.font = japaneseBold; goldenTouchItemBonus_text.fontSize = 21;
 
         miniChest_text.text = "ミニチェスト"; miniChest_text.font = japaneseSemiBold; miniChest_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { miniChest_text.fontSize = 20; }
         miniChest2_text.text = "ミニチェスト"; miniChest2_text.font = japaneseSemiBold; miniChest2_text.fontSize = 29;
         miniChestUpgradeBonus_text.text = "アップグレードボーナス：ミニチェストは3つの可能な報酬のうちの1つを与えます"; miniChestUpgradeBonus_text.font = japaneseBold; miniChestUpgradeBonus_text.fontSize = 21;
         miniChestMaxHover_text.text = "最大レベル"; miniChestMaxHover_text.font = japaneseBold; miniChestMaxHover_text.fontSize = 10;
@@ -6846,27 +6860,33 @@ public class Localization : MonoBehaviour
         treasureBagItemBonus_text.text = "アイテムボーナス：任意の胸からの宝物をドロップすることができます。宝の袋はまた、あなたに5XPドロップを与えます"; treasureBagItemBonus_text.font = japaneseBold; treasureBagItemBonus_text.fontSize = 21;
 
         serendipityScroll_text.text = "セレンディピティスクロール"; serendipityScroll_text.font = japaneseSemiBold; serendipityScroll_text.fontSize = 15;
+        if (PlaceMobileButtons.isMobile == true) { serendipityScroll_text.fontSize = 11; }
         serendipityScroll2_text.text = "セレンディピティスクロール"; serendipityScroll2_text.font = japaneseSemiBold; serendipityScroll2_text.fontSize = 14;
         serendipityScrollStatsReset_text.text = "セレンディピティスクロールからの統計はプレステージでリセットされます"; serendipityScrollStatsReset_text.font = japaneseBold; serendipityScrollStatsReset_text.fontSize = 21;
 
         gauntletOfGreed_text.text = "欲のガントレット"; gauntletOfGreed_text.font = japaneseSemiBold; gauntletOfGreed_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { gauntletOfGreed_text.fontSize = 17; }
         gauntletOfGreed2_text.text = "欲のガントレット"; gauntletOfGreed2_text.font = japaneseSemiBold; gauntletOfGreed2_text.fontSize = 20;
         gauntletOfGreenBonus_text.text = "アイテムボーナス：3％のチャンスは、すべてのクリックで宝物をスポーンする"; gauntletOfGreenBonus_text.font = japaneseBold; gauntletOfGreenBonus_text.fontSize = 21;
 
         magicalElixir_text.text = "魔法のエリクサー"; magicalElixir_text.font = japaneseSemiBold; magicalElixir_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { magicalElixir_text.fontSize = 17; }
         magicalElixir2_text.text = "魔法のエリクサー"; magicalElixir2_text.font = japaneseSemiBold; magicalElixir2_text.fontSize = 24;
         magicalElixirItemBonus_text.text = "アイテムボーナス：エリクサーがアクティブである間、すべての宝物に+0.3％ドロップチャンス"; magicalElixirItemBonus_text.font = japaneseBold; magicalElixirItemBonus_text.fontSize = 21;
 
         ancientRelic_text.text = "古代遺物"; ancientRelic_text.font = japaneseSemiBold; ancientRelic_text.fontSize = 25;
+      
         ancientRelic2_text.text = "古代遺物"; ancientRelic2_text.font = japaneseSemiBold; ancientRelic2_text.fontSize = 22;
         ancientRelicGivesBuff_text.text = "ランダムな統計に永続的なバフを与えます"; ancientRelicGivesBuff_text.font = japaneseBold; ancientRelicGivesBuff_text.fontSize = 22;
         ancientRelicKeepBuff_text.text = "あなたは威信の後に古代の遺物によって得られたすべてのバフを維持します"; ancientRelicKeepBuff_text.font = japaneseBold; ancientRelicKeepBuff_text.fontSize = 21;
 
         enchantedHammer_text.text = "エンチャントされたハンマー"; enchantedHammer_text.font = japaneseSemiBold; enchantedHammer_text.fontSize = 15;
+        if (PlaceMobileButtons.isMobile == true) { enchantedHammer_text.fontSize = 10.5f; }
         enchantedHammer2_text.text = "エンチャントされたハンマー"; enchantedHammer2_text.font = japaneseSemiBold; enchantedHammer2_text.fontSize = 13;
         enchantedHammerItemBonus_text.text = "アイテムボーナス：胸の報酬を3倍にする2％のチャンス"; enchantedHammerItemBonus_text.font = japaneseBold; enchantedHammerItemBonus_text.fontSize = 21;
 
         treasurePotion_text.text = "トレジャーポーション"; treasurePotion_text.font = japaneseSemiBold; treasurePotion_text.fontSize = 20;
+        if (PlaceMobileButtons.isMobile == true) { treasurePotion_text.fontSize = 14; }
         treasurePotion2_text.text = "トレジャーポーション"; treasurePotion2_text.font = japaneseSemiBold; treasurePotion2_text.fontSize = 17;
         treasurePotionItemBonus_text.text = "アイテムボーナス：ドロップされたアイテムは、値を倍増する+25％のチャンスを得る"; treasurePotionItemBonus_text.font = japaneseBold; treasurePotionItemBonus_text.fontSize = 21;
 
@@ -6878,6 +6898,7 @@ public class Localization : MonoBehaviour
         clickToCollect_text.text = "収集するためにクリック！"; clickToCollect_text.font = japaneseBoldOutline; clickToCollect_text.fontSize = 12;
 
         mimicChest_text.text = "胸を模倣する"; mimicChest_text.font = japaneseSemiBold; mimicChest_text.fontSize = 26;
+        if (PlaceMobileButtons.isMobile == true) { mimicChest_text.fontSize = 20; }
         mimicChest2_text.text = "胸を模倣する"; mimicChest2_text.font = japaneseSemiBold; mimicChest2_text.fontSize = 20;
         mimicChestItemBonus_text.text = "アイテムボーナス：正のバフは倍の長さを持続する15％のチャンスを持っています"; mimicChestItemBonus_text.font = japaneseBold; mimicChestItemBonus_text.fontSize = 21;
         turnedOff_text.text = "オフになっています"; turnedOff_text.font = japaneseSemiBold; turnedOff_text.fontSize = 18;
@@ -8695,6 +8716,8 @@ public class Localization : MonoBehaviour
         EnglishLanguageChosen = 0;
         ChineseLanguageChosen = 1;
         KoreanLanguageChosen = 0;
+
+        if (PlaceMobileButtons.isMobile == true) { ChangeMobileText(); }
 
         PlayerPrefs.SetInt("SaveEnglish", EnglishLanguageChosen);
         PlayerPrefs.SetInt("SaveRussian", RussianLanguageChosen);
@@ -11026,6 +11049,8 @@ public class Localization : MonoBehaviour
         ChineseLanguageChosen = 0;
         KoreanLanguageChosen = 1;
 
+        if (PlaceMobileButtons.isMobile == true) { ChangeMobileText(); }
+
         PlayerPrefs.SetInt("SaveEnglish", EnglishLanguageChosen);
         PlayerPrefs.SetInt("SaveRussian", RussianLanguageChosen);
         PlayerPrefs.SetInt("SaveJapanese", JapaneseLanguageChosen);
@@ -13349,6 +13374,7 @@ public class Localization : MonoBehaviour
 
     public void ChangeAllText()
     {
+        specialScript.NewPrices();
         updateGame.SetInfoText();
         clickPower.SetTopText();
         clickPower.ChangeText();
@@ -13361,6 +13387,223 @@ public class Localization : MonoBehaviour
 
         SpawnRewards.changeDropChanceValues = true;
         UpdateGame.changeItemUpdate = true;
+    }
+
+    public TextMeshProUGUI settingsText, informationText, achievementsText, statisticsText;
+    public static string info, chest, findTheCookie, cookieCliker, useTheChicken;
+
+    public TextMeshProUGUI settingsClose, informationClose, achievementsClose, statsClose, prestigeInfoClose, rareTreasureClose, treasureClose, itemsInfoCLose, cursorInfoClose, chestInfoClose, activeClose, passiveClose, turnOff, turnOn, autoPurchaseChestClose, prestigeUpgradeClose, prestigeUpgradeBuy;
+
+    public TextMeshProUGUI miscText, bucketClaimText, bucketCloseText;
+    //remeber barrel
+
+    public PlaceMobileButtons mobileScript;
+
+    public void ChangeMobileText()
+    {
+        //English
+        if (EnglishLanguageChosen == 1)
+        {
+            miscText.text = "Misc"; miscText.font = ChangaBoldSDF1; miscText.fontSize = 130;
+            bucketClaimText.text = "CLAIM"; bucketClaimText.font = ChangaBoldSDF1; miscText.fontSize = 42;
+            bucketCloseText.text = "CLOSE"; bucketCloseText.font = ChangaBoldSDF1; miscText.fontSize = 42;
+
+            findTheCookie = "Find the cookie!";
+            cookieCliker = "Cookie clicker!";
+            useTheChicken = "Use the chicken";
+
+            settingsText.text = "SETTINGS"; settingsText.font = ChangaBoldSDF1; settingsText.fontSize = 66;
+            informationText.text = "INFORMATION"; informationText.font = ChangaBoldSDF1; informationText.fontSize = 55;
+            achievementsText.text = "ACHIEVEMENTS"; achievementsText.font = ChangaBoldSDF1; achievementsText.fontSize = 48;
+            statisticsText.text = "STATS"; statisticsText.font = ChangaBoldSDF1; statisticsText.fontSize = 65;
+            info = "Info";
+            chest = "Chest"; 
+
+            settingsClose.text = "CLOSE"; settingsClose.font = ChangaBoldSDF1; settingsClose.fontSize = 83;
+            informationClose.text = "CLOSE"; informationClose.font = ChangaBoldSDF1; informationClose.fontSize = 83;
+            achievementsClose.text = "CLOSE"; achievementsClose.font = ChangaBoldSDF1; achievementsClose.fontSize = 84;
+            statsClose.text = "CLOSE"; statsClose.font = ChangaBoldSDF1; statsClose.fontSize = 84;
+            prestigeInfoClose.text = "CLOSE"; prestigeInfoClose.font = ChangaBoldSDF1; prestigeInfoClose.fontSize = 58;
+            rareTreasureClose.text = "CLOSE"; rareTreasureClose.font = ChangaBoldSDF1; rareTreasureClose.fontSize = 59;
+            treasureClose.text = "CLOSE"; treasureClose.font = ChangaBoldSDF1; treasureClose.fontSize = 67;
+            itemsInfoCLose.text = "CLOSE"; itemsInfoCLose.font = ChangaBoldSDF1; itemsInfoCLose.fontSize = 32;
+            cursorInfoClose.text = "CLOSE"; cursorInfoClose.font = ChangaBoldSDF1; cursorInfoClose.fontSize = 32;
+            chestInfoClose.text = "CLOSE"; chestInfoClose.font = ChangaBoldSDF1; chestInfoClose.fontSize = 50;
+            activeClose.text = "CLOSE"; activeClose.font = ChangaBoldSDF1; activeClose.fontSize = 99;
+            passiveClose.text = "CLOSE"; passiveClose.font = ChangaBoldSDF1; passiveClose.fontSize = 99;
+            turnOff.text = "TURN OFF"; turnOff.font = ChangaBoldSDF1; turnOff.fontSize = 30;
+            turnOn.text = "TURN ON"; turnOn.font = ChangaBoldSDF1; turnOn.fontSize = 30;
+            autoPurchaseChestClose.text = "CLOSE"; autoPurchaseChestClose.font = ChangaBoldSDF1; autoPurchaseChestClose.fontSize = 56;
+            prestigeUpgradeClose.text = "CLOSE"; prestigeUpgradeClose.font = ChangaBoldSDF1; prestigeUpgradeClose.fontSize = 90;
+            prestigeUpgradeBuy.text = "BUY"; prestigeUpgradeBuy.font = ChangaBoldSDF1; prestigeUpgradeBuy.fontSize = 90;
+        }
+
+        //Russian
+        if (RussianLanguageChosen == 1) 
+        {
+            miscText.text = "Разное";
+            bucketClaimText.text = "Заявить";
+            bucketCloseText.text = "Закрыть";
+
+            miscText.font = russianNono_Bold; miscText.fontSize = 130;
+            bucketClaimText.font = russianNono_Bold; miscText.fontSize = 42;
+            bucketCloseText.font = russianNono_Bold; miscText.fontSize = 42;
+
+            findTheCookie = "Найти печеньку!";
+            cookieCliker = "Кликер печенек!";
+            useTheChicken = "Использовать курицу";
+
+            settingsText.text = "Настройки"; settingsText.font = russianNono_Bold; settingsText.fontSize = 66;
+            informationText.text = "ИНФО"; informationText.font = russianNono_Bold; informationText.fontSize = 55;
+            achievementsText.text = "ДОСТИЖЕНИЯ"; achievementsText.font = russianNono_Bold; achievementsText.fontSize = 48;
+            statisticsText.text = "СТАТИСТИКА"; statisticsText.font = russianNono_Bold; statisticsText.fontSize = 65;
+            info = "ИНФО";
+            chest = "Сундук";
+
+            settingsClose.text = "Закрыть"; settingsClose.font = russianNono_Bold; settingsClose.fontSize = 83;
+            informationClose.text = "Закрыть"; informationClose.font = russianNono_Bold; informationClose.fontSize = 83;
+            achievementsClose.text = "Закрыть"; achievementsClose.font = russianNono_Bold; achievementsClose.fontSize = 84;
+            statsClose.text = "Закрыть"; statsClose.font = russianNono_Bold; statsClose.fontSize = 84;
+            prestigeInfoClose.text = "Закрыть"; prestigeInfoClose.font = russianNono_Bold; prestigeInfoClose.fontSize = 58;
+            rareTreasureClose.text = "Закрыть"; rareTreasureClose.font = russianNono_Bold; rareTreasureClose.fontSize = 59;
+            treasureClose.text = "Закрыть"; treasureClose.font = russianNono_Bold; treasureClose.fontSize = 67;
+            itemsInfoCLose.text = "Закрыть"; itemsInfoCLose.font = russianNono_Bold; itemsInfoCLose.fontSize = 32;
+            cursorInfoClose.text = "Закрыть"; cursorInfoClose.font = russianNono_Bold; cursorInfoClose.fontSize = 32;
+            chestInfoClose.text = "Закрыть"; chestInfoClose.font = russianNono_Bold; chestInfoClose.fontSize = 50;
+            activeClose.text = "Закрыть"; activeClose.font = russianNono_Bold; activeClose.fontSize = 99;
+            passiveClose.text = "Закрыть"; passiveClose.font = russianNono_Bold; passiveClose.fontSize = 99;
+            turnOff.text = "Включить"; turnOff.font = russianNono_Bold; turnOff.fontSize = 30;
+            turnOn.text = "Выключить"; turnOn.font = russianNono_Bold; turnOn.fontSize = 30;
+            autoPurchaseChestClose.text = "Закрыть"; autoPurchaseChestClose.font = russianNono_Bold; autoPurchaseChestClose.fontSize = 56;
+            prestigeUpgradeClose.text = "Закрыть"; prestigeUpgradeClose.font = russianNono_Bold; prestigeUpgradeClose.fontSize = 90;
+            prestigeUpgradeBuy.text = "Купить"; prestigeUpgradeBuy.font = russianNono_Bold; prestigeUpgradeBuy.fontSize = 60;
+        }
+
+        //Japanese
+        if (JapaneseLanguageChosen == 1) 
+        {
+            miscText.text = "雑多なもの";
+            bucketClaimText.text = "得る";
+            bucketCloseText.text = "出口";
+
+            miscText.font = japaneseSemiBold; miscText.fontSize = 130;
+            bucketClaimText.font = japaneseSemiBold; miscText.fontSize = 42;
+            bucketCloseText.font = japaneseSemiBold; miscText.fontSize = 42;
+
+            findTheCookie = "クッキーを見つけよう!";
+            cookieCliker = "クッキークリッカー!";
+            useTheChicken = "鶏肉を使う";
+
+            settingsText.text = "設定"; settingsText.font = japaneseSemiBold; settingsText.fontSize = 66;
+            informationText.text = "情報"; informationText.font = japaneseSemiBold; informationText.fontSize = 55;
+            achievementsText.text = "実績"; achievementsText.font = japaneseSemiBold; achievementsText.fontSize = 48;
+            statisticsText.text = "ﾂづ慊つｷﾂ"; statisticsText.font = japaneseSemiBold; statisticsText.fontSize = 65;
+            info = "情報";
+            chest = "胸";
+
+            settingsClose.text = "出口"; settingsClose.font = japaneseSemiBold; settingsClose.fontSize = 83;
+            informationClose.text = "出口"; informationClose.font = japaneseSemiBold; informationClose.fontSize = 83;
+            achievementsClose.text = "出口"; achievementsClose.font = japaneseSemiBold; achievementsClose.fontSize = 84;
+            statsClose.text = "出口"; statsClose.font = japaneseSemiBold; statsClose.fontSize = 84;
+            prestigeInfoClose.text = "出口"; prestigeInfoClose.font = japaneseSemiBold; prestigeInfoClose.fontSize = 58;
+            rareTreasureClose.text = "出口"; rareTreasureClose.font = japaneseSemiBold; rareTreasureClose.fontSize = 59;
+            treasureClose.text = "出口"; treasureClose.font = japaneseSemiBold; treasureClose.fontSize = 67;
+            itemsInfoCLose.text = "出口"; itemsInfoCLose.font = japaneseSemiBold; itemsInfoCLose.fontSize = 32;
+            cursorInfoClose.text = "出口"; cursorInfoClose.font = japaneseSemiBold; cursorInfoClose.fontSize = 32;
+            chestInfoClose.text = "出口"; chestInfoClose.font = japaneseSemiBold; chestInfoClose.fontSize = 50;
+            activeClose.text = "出口"; activeClose.font = japaneseSemiBold; activeClose.fontSize = 99;
+            passiveClose.text = "出口"; passiveClose.font = japaneseSemiBold; passiveClose.fontSize = 99;
+            turnOff.text = " 消す"; turnOff.font = japaneseSemiBold; turnOff.fontSize = 30;
+            turnOn.text = "つける"; turnOn.font = japaneseSemiBold; turnOn.fontSize = 30;
+            autoPurchaseChestClose.text = "出口"; autoPurchaseChestClose.font = japaneseSemiBold; autoPurchaseChestClose.fontSize = 56;
+            prestigeUpgradeClose.text = "出口"; prestigeUpgradeClose.font = japaneseSemiBold; prestigeUpgradeClose.fontSize = 90;
+            prestigeUpgradeBuy.text = "買う"; prestigeUpgradeBuy.font = japaneseSemiBold; prestigeUpgradeBuy.fontSize = 90;
+        }
+
+        //Chinese
+        if (ChineseLanguageChosen == 1) 
+        {
+            miscText.text = "Misc";
+            bucketClaimText.text = "得到";
+            bucketCloseText.text = "关闭";
+
+            miscText.font = chineseFont; miscText.fontSize = 130;
+            bucketClaimText.font = chineseFont; miscText.fontSize = 42;
+            bucketCloseText.font = chineseFont; miscText.fontSize = 42;
+
+            findTheCookie = "找到饼干！";
+            cookieCliker = "饼干点击大师！";
+            useTheChicken = "使用鸡";
+            
+            settingsText.text = "设置"; settingsText.font = chineseFont; settingsText.fontSize = 66;
+            informationText.text = "资讯"; informationText.font = chineseFont; informationText.fontSize = 55;
+            achievementsText.text = "成就"; achievementsText.font = chineseFont; achievementsText.fontSize = 48;
+            statisticsText.text = "数据"; statisticsText.font = chineseFont; statisticsText.fontSize = 65;
+            info = "资讯";
+            chest = "宝箱";
+
+            settingsClose.text = "关闭"; settingsClose.font = chineseFont; settingsClose.fontSize = 83;
+            informationClose.text = "关闭"; informationClose.font = chineseFont; informationClose.fontSize = 83;
+            achievementsClose.text = "关闭"; achievementsClose.font = chineseFont; achievementsClose.fontSize = 84;
+            statsClose.text = "关闭"; statsClose.font = chineseFont; statsClose.fontSize = 84;
+            prestigeInfoClose.text = "关闭"; prestigeInfoClose.font = chineseFont; prestigeInfoClose.fontSize = 58;
+            rareTreasureClose.text = "关闭"; rareTreasureClose.font = chineseFont; rareTreasureClose.fontSize = 59;
+            treasureClose.text = "关闭"; treasureClose.font = chineseFont; treasureClose.fontSize = 67;
+            itemsInfoCLose.text = "关闭"; itemsInfoCLose.font = chineseFont; itemsInfoCLose.fontSize = 32;
+            cursorInfoClose.text = "关闭"; cursorInfoClose.font = chineseFont; cursorInfoClose.fontSize = 32;
+            chestInfoClose.text = "关闭"; chestInfoClose.font = chineseFont; chestInfoClose.fontSize = 50;
+            activeClose.text = "关闭"; activeClose.font = chineseFont; activeClose.fontSize = 99;
+            passiveClose.text = "关闭"; passiveClose.font = chineseFont; passiveClose.fontSize = 99;
+            turnOff.text = "关掉"; turnOff.font = chineseFont; turnOff.fontSize = 30;
+            turnOn.text = "打开"; turnOn.font = chineseFont; turnOn.fontSize = 30;
+            autoPurchaseChestClose.text = "关闭"; autoPurchaseChestClose.font = chineseFont; autoPurchaseChestClose.fontSize = 56;
+            prestigeUpgradeClose.text = "关闭"; prestigeUpgradeClose.font = chineseFont; prestigeUpgradeClose.fontSize = 90;
+            prestigeUpgradeBuy.text = "买"; prestigeUpgradeBuy.font = chineseFont; prestigeUpgradeBuy.fontSize = 90;
+        }
+
+        //Korean
+        if (KoreanLanguageChosen == 1) 
+        {
+            miscText.text = "기타";
+            bucketClaimText.text = "주장하다";
+            bucketCloseText.text = "나가기";
+
+            miscText.font = koreanFont; miscText.fontSize = 130;
+            bucketClaimText.font = koreanFont; miscText.fontSize = 42;
+            bucketCloseText.font = koreanFont; miscText.fontSize = 42;
+
+            findTheCookie = "쿠키를 찾으세요!";
+            cookieCliker = "쿠키 클리커!";
+            useTheChicken = "닭을 사용하세요";
+
+            settingsText.text = "설정"; settingsText.font = koreanFont; settingsText.fontSize = 66;
+            informationText.text = "정보"; informationText.font = koreanFont; informationText.fontSize = 55;
+            achievementsText.text = "업적"; achievementsText.font = koreanFont; achievementsText.fontSize = 48;
+            statisticsText.text = "스탯"; statisticsText.font = koreanFont; statisticsText.fontSize = 65;
+            info = "정보";
+            chest = "상자";
+
+            settingsClose.text = "나가기"; settingsClose.font = koreanFont; settingsClose.fontSize = 83;
+            informationClose.text = "나가기"; informationClose.font = koreanFont; informationClose.fontSize = 83;
+            achievementsClose.text = "나가기"; achievementsClose.font = koreanFont; achievementsClose.fontSize = 84;
+            statsClose.text = "나가기"; statsClose.font = koreanFont; statsClose.fontSize = 84;
+            prestigeInfoClose.text = "나가기"; prestigeInfoClose.font = koreanFont; prestigeInfoClose.fontSize = 58;
+            rareTreasureClose.text = "나가기"; rareTreasureClose.font = koreanFont; rareTreasureClose.fontSize = 59;
+            treasureClose.text = "나가기"; treasureClose.font = koreanFont; treasureClose.fontSize = 67;
+            itemsInfoCLose.text = "나가기"; itemsInfoCLose.font = koreanFont; itemsInfoCLose.fontSize = 32;
+            cursorInfoClose.text = "나가기"; cursorInfoClose.font = koreanFont; cursorInfoClose.fontSize = 32;
+            chestInfoClose.text = "나가기"; chestInfoClose.font = koreanFont; chestInfoClose.fontSize = 50;
+            activeClose.text = "나가기"; activeClose.font = koreanFont; activeClose.fontSize = 99;
+            passiveClose.text = "나가기"; passiveClose.font = koreanFont; passiveClose.fontSize = 99;
+            turnOff.text = "켬"; turnOff.font = koreanFont; turnOff.fontSize = 30;
+            turnOn.text = "켬"; turnOn.font = koreanFont; turnOn.fontSize = 30;
+            autoPurchaseChestClose.text = "나가기"; autoPurchaseChestClose.font = koreanFont; autoPurchaseChestClose.fontSize = 56;
+            prestigeUpgradeClose.text = "나가기"; prestigeUpgradeClose.font = koreanFont; prestigeUpgradeClose.fontSize = 90;
+            prestigeUpgradeBuy.text = "사다"; prestigeUpgradeBuy.font = koreanFont; prestigeUpgradeBuy.fontSize = 90;
+        }
+
+        mobileScript.CheckCursorInfo();
+        mobileScript.CheckShopQuestionMarks();
     }
 
 }
