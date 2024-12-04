@@ -163,6 +163,8 @@ public class TotalGoldAmount : MonoBehaviour, IDataPersistence
     void Update()
     {
         goldAmountText.text = FormatCoinsDouble(UpdateGame.totalGoldHigher);
+        if(PlaceMobileButtons.isMobile == true && Localization.RussianLanguageChosen == 1) { goldAmountText.fontSize = 33f; }
+        else { goldAmountText.fontSize = 42f; }
 
         //if(totalGold < 50000000000000000000000000000000000000f) { goldAmountText.text = FormatCoinsFull(totalGold); }
         //if (totalGold > 50000000000000000000000000000000000000f) { goldAmountText.text = FormatCoinsDouble(UpdateGame.totalGoldHigher); }

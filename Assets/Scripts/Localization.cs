@@ -4323,6 +4323,7 @@ public class Localization : MonoBehaviour
         for (int i = 0; i < 21; i++)
         {
             levelUp_text[i].text = "УЛУЧШЕНИЕ"; levelUp_text[i].font = russian_SemiBold; levelUp_text[i].fontSize = 21;
+            if (PlaceMobileButtons.isMobile == true) { levelUp_text[i].fontSize = 15.5f; }
         }
 
         // Cursors - Others
@@ -4370,86 +4371,107 @@ public class Localization : MonoBehaviour
         levelUpCursors_text.text = "-Повышайте уровень своих курсоров, тратя свои сокровища"; levelUpCursors_text.font = russianNono_SemiSkinny; levelUpCursors_text.fontSize = 20f;
 
         gentleTap_text.text = "ЛЕГКОЕ КАСАНИЕ"; gentleTap_text.font = russian_SemiBold; gentleTap_text.fontSize = 31f;
+        if (PlaceMobileButtons.isMobile == true) { gentleTap_text.fontSize = 22; }
         gentleTap2_text.text = "ЛЕГКОЕ КАСАНИЕ"; gentleTap2_text.font = russian_SemiBold; gentleTap2_text.fontSize = 19f;
         gentleTapCursorBonus_text.text = "Бонус курсора:<color=white>  Каждый клик имеет 1% шанс породить 1 золотую монету"; gentleTapCursorBonus_text.font = robotoBold; gentleTapCursorBonus_text.fontSize = 21f;
 
         relaxedPalm_text.text = "СПОКОЙНАЯ ЛАДОНЬ"; relaxedPalm_text.font = russian_SemiBold; relaxedPalm_text.fontSize = 25f;
+        if (PlaceMobileButtons.isMobile == true) { relaxedPalm_text.fontSize = 18; }
         relaxedPalm2_text.text = "СПОКОЙНАЯ ЛАДОНЬ"; relaxedPalm2_text.font = russian_SemiBold; relaxedPalm2_text.fontSize = 16f;
         relaxedPalmCursorBonus_text.text = "Бонус курсора:<color=white>  Каждые 10 открытых сундуков имеют 25% шанс породить 5 золотых монет"; relaxedPalmCursorBonus_text.font = robotoBold; relaxedPalmCursorBonus_text.fontSize = 21f;
 
         galeForce_text.text = "ШТОРМОВАЯ СИЛА"; galeForce_text.font = russian_SemiBold; galeForce_text.fontSize = 28f;
+        if (PlaceMobileButtons.isMobile == true) { galeForce_text.fontSize = 20; }
         galeForce2_text.text = "ШТОРМОВАЯ СИЛА"; galeForce2_text.font = russian_SemiBold; galeForce2_text.fontSize = 18f;
         galeForceCursorBonus_text.text = "Бонус курсора:<color=white>  Каждый раз, когда вы наносите критический удар, есть 25% шанс породить 1 золотую монету"; galeForceCursorBonus_text.font = robotoBold; galeForceCursorBonus_text.fontSize = 21f;
 
         radiantTouch_text.text = "СВЕТЛОЕ КАСАНИЕ"; radiantTouch_text.font = russian_SemiBold; radiantTouch_text.fontSize = 29f;
+        if (PlaceMobileButtons.isMobile == true) { radiantTouch_text.fontSize = 20; }
         radiantTouch2_text.text = "СВЕТЛОЕ КАСАНИЕ"; radiantTouch2_text.font = russian_SemiBold; radiantTouch2_text.fontSize = 18f;
         radiantTouchCursorBonus_text.text = "Бонус курсора:<color=white>  Порождает 7 золотых монет за каждые 35 открытых сундуков"; radiantTouchCursorBonus_text.font = robotoBold; radiantTouchCursorBonus_text.fontSize = 21f;
 
         energySurge_text.text = "ПОТОК ЭНЕРГИИ"; energySurge_text.font = russian_SemiBold; energySurge_text.fontSize = 32f;
+        if (PlaceMobileButtons.isMobile == true) { energySurge_text.fontSize = 23; }
         energySurge2_text.text = "ПОТОК ЭНЕРГИИ"; energySurge2_text.font = russian_SemiBold; energySurge2_text.fontSize = 19f;
         energySurgeCursorBonus_text.text = "Бонус курсора:<color=white>  Каждое сокровище получает +0,1% шанса на выпадение"; energySurgeCursorBonus_text.font = robotoBold; energySurgeCursorBonus_text.fontSize = 21f;
 
         phantomPalm_text.text = "ПРИЗРАЧНАЯ ЛАДОНЬ"; phantomPalm_text.font = russian_SemiBold; phantomPalm_text.fontSize = 25f;
+        if (PlaceMobileButtons.isMobile == true) { phantomPalm_text.fontSize = 18; }
         phantomPalm2_text.text = "ПРИЗРАЧНАЯ ЛАДОНЬ"; phantomPalm2_text.font = russian_SemiBold; phantomPalm2_text.fontSize = 15f;
         phantomPalmCursorBonus_text.text = "Бонус курсора: <color=white> Каждый критический удар имеет 7% шанс породить сокровище. Каждое сокровище имеет 3% шанса удвоиться в стоимости"; phantomPalmCursorBonus_text.font = robotoBold; phantomPalmCursorBonus_text.fontSize = 21f;
 
         steelStrike_text.text = "СТАЛЬНОЙ УДАР"; steelStrike_text.font = russian_SemiBold; steelStrike_text.fontSize = 33f;
+        if (PlaceMobileButtons.isMobile == true) { steelStrike_text.fontSize = 24; }
         steelStrike2_text.text = "СТАЛЬНОЙ УДАР"; steelStrike2_text.font = russian_SemiBold; steelStrike2_text.fontSize = 19f;
         steelStrikeCursorBonus_text.text = "Бонус курсора:<color=white>  +5% больше золота. +5% больше опыта"; steelStrikeCursorBonus_text.font = robotoBold; steelStrikeCursorBonus_text.fontSize = 21f;
 
         lethalTouch_text.text = "СМЕРТЕЛЬНОЕ КАСАНИЕ"; lethalTouch_text.font = russian_SemiBold; lethalTouch_text.fontSize = 22f;
+        if (PlaceMobileButtons.isMobile == true) { lethalTouch_text.fontSize = 16; }
         lethalTouch2_text.text = "СМЕРТЕЛЬНОЕ КАСАНИЕ"; lethalTouch2_text.font = russian_SemiBold; lethalTouch2_text.fontSize = 14f;
         lethalTouchCursorBonus_text.text = "Бонус курсора: <color=white> Каждый раз при открытии сундука есть 6% шанс получить двойной опыт"; lethalTouchCursorBonus_text.font = robotoBold; lethalTouchCursorBonus_text.fontSize = 21f;
 
         precisionPoint_text.text = "ТОЧКА ТОЧНОСТИ"; precisionPoint_text.font = russian_SemiBold; precisionPoint_text.fontSize = 30f;
+        if (PlaceMobileButtons.isMobile == true) { precisionPoint_text.fontSize = 21; }
         precisionPoint2_text.text = "ТОЧКА ТОЧНОСТИ"; precisionPoint2_text.font = russian_SemiBold; precisionPoint2_text.fontSize = 18f;
         precisionPointCursorBonus_text.text = "Бонус курсора:<color=white>  Каждое выпавшее сокровище имеет +7% шанса удвоиться в стоимости"; precisionPointCursorBonus_text.font = robotoBold; precisionPointCursorBonus_text.fontSize = 21f;
 
         vortexTap_text.text = "ВОРТЕКСНЫЙ ТАП"; vortexTap_text.font = russian_SemiBold; vortexTap_text.fontSize = 30f;
+        if (PlaceMobileButtons.isMobile == true) { vortexTap_text.fontSize = 22; }
         vortexTap2_text.text = "ВОРТЕКСНЫЙ ТАП"; vortexTap2_text.font = russian_SemiBold; vortexTap2_text.fontSize = 19f;
         vortexTapCursorBonus_text.text = "Бонус курсора:<color=white>  Каждые 25 открытых сундуков породят 1 сокровище и дадут тройной опыт"; vortexTapCursorBonus_text.font = robotoBold; vortexTapCursorBonus_text.fontSize = 21f;
 
         cursedClaw_text.text = "ПРОКЛЯТЫЙ КОГОТЬ"; cursedClaw_text.font = russian_SemiBold; cursedClaw_text.fontSize = 26f;
+        if (PlaceMobileButtons.isMobile == true) { cursedClaw_text.fontSize = 19; }
         cursedClaw2_text.text = "ПРОКЛЯТЫЙ КОГОТЬ"; cursedClaw2_text.font = russian_SemiBold; cursedClaw2_text.fontSize = 16f;
         cursedClawCursorBonus_text.text = "Бонус курсора:<color=white>  Каждый раз, когда наносится критический удар, есть 30% шанс породить золотую монету и 3% шанс породить сокровище"; cursedClawCursorBonus_text.font = robotoBold; cursedClawCursorBonus_text.fontSize = 21f;
 
         sniperClick_text.text = "СНАЙПЕРСКИЙ КЛИК"; sniperClick_text.font = russian_SemiBold; sniperClick_text.fontSize = 25f;
+        if (PlaceMobileButtons.isMobile == true) { sniperClick_text.fontSize = 18; }
         sniperClick2_text.text = "СНАЙПЕРСКИЙ КЛИК"; sniperClick2_text.font = russian_SemiBold; sniperClick2_text.fontSize = 16f;
         sniperClickCursorBonus_text.text = "Бонус курсора:<color=white>  10% больше золота и 15% больше опыта"; sniperClickCursorBonus_text.font = robotoBold; sniperClickCursorBonus_text.fontSize = 21f;
 
         shadowSurge_text.text = "ТЕНЕВОЙ ПОТОК"; shadowSurge_text.font = russian_SemiBold; shadowSurge_text.fontSize = 26f;
+        if (PlaceMobileButtons.isMobile == true) { shadowSurge_text.fontSize = 23; }
         shadowSurge2_text.text = "ТЕНЕВОЙ ПОТОК"; shadowSurge2_text.font = russian_SemiBold; shadowSurge2_text.fontSize = 20f;
         shadowSurgeCursorBonus_text.text = "Бонус курсора:<color=white>  Каждый критический удар породит 1 золотую монету"; shadowSurgeCursorBonus_text.font = robotoBold; shadowSurgeCursorBonus_text.fontSize = 21f;
 
         cripplingCrush_text.text = "ПАРАЛИЗУЮЩИЙ УДАР"; cripplingCrush_text.font = russian_SemiBold; cripplingCrush_text.fontSize = 23f;
+        if (PlaceMobileButtons.isMobile == true) { cripplingCrush_text.fontSize = 16; }
         cripplingCrush2_text.text = "ПАРАЛИЗУЮЩИЙ УДАР"; cripplingCrush2_text.font = russian_SemiBold; cripplingCrush2_text.fontSize = 14f;
         cripplingCrushCursorBonus_text.text = "Бонус курсора:<color=white>  Каждый раз, когда вы получаете сокровище, есть 25% шанс удвоить его стоимость"; cripplingCrushCursorBonus_text.font = robotoBold; cripplingCrushCursorBonus_text.fontSize = 21f;
 
         rapidClick_text.text = "БЫСТРЫЙ КЛИК"; rapidClick_text.font = russian_SemiBold; rapidClick_text.fontSize = 29f;
+        if (PlaceMobileButtons.isMobile == true) { rapidClick_text.fontSize = 24; }
         rapidClick2_text.text = "БЫСТРЫЙ КЛИК"; rapidClick2_text.font = russian_SemiBold; rapidClick2_text.fontSize = 19f;
         rapidClickCursorBonus_text.text = "Бонус курсора: <color=white> Каждый критический удар имеет 13% шанс породить сокровище"; rapidClickCursorBonus_text.font = robotoBold; rapidClickCursorBonus_text.fontSize = 21f;
 
         celestialTouch_text.text = "НЕБЕСНОЕ КАСАНИЕ"; celestialTouch_text.font = russian_SemiBold; celestialTouch_text.fontSize = 26f;
+        if (PlaceMobileButtons.isMobile == true) { celestialTouch_text.fontSize = 19; }
         celestialTouch2_text.text = "НЕБЕСНОЕ КАСАНИЕ"; celestialTouch2_text.font = russian_SemiBold; celestialTouch2_text.fontSize = 17f;
         celestialTouchCursorBonus_text.text = "Бонус курсора: <color=white> Опыт удваивается"; celestialTouchCursorBonus_text.font = robotoBold; celestialTouchCursorBonus_text.fontSize = 21f;
 
         arcaneClick_text.text = "ТАИНСТВЕННЫЙ КЛИК"; arcaneClick_text.font = russian_SemiBold; arcaneClick_text.fontSize = 21f;
+        if (PlaceMobileButtons.isMobile == true) { arcaneClick_text.fontSize = 17; }
         arcaneClick2_text.text = "ТАИНСТВЕННЫЙ КЛИК"; arcaneClick2_text.font = russian_SemiBold; arcaneClick2_text.fontSize = 15f;
         arcaneClickCursorBonus_text.text = "Бонус курсора:<color=white>  Стоимость каждого сокровища удваивается"; arcaneClickCursorBonus_text.font = robotoBold; arcaneClickCursorBonus_text.fontSize = 21f;
 
         eternalTouch_text.text = "ВЕЧНОЕ КАСАНИЕ"; eternalTouch_text.font = russian_SemiBold; eternalTouch_text.fontSize = 29f;
+        if (PlaceMobileButtons.isMobile == true) { eternalTouch_text.fontSize = 23; }
         eternalTouch2_text.text = "ВЕЧНОЕ КАСАНИЕ"; eternalTouch2_text.font = russian_SemiBold; eternalTouch2_text.fontSize = 18f;
         eternalTouchCursorBonus_text.text = "Бонус курсора:<color=white>  Опыт и сокровища удваиваются. 5% шанс получить золотую монету каждый клик"; eternalTouchCursorBonus_text.font = robotoBold; eternalTouchCursorBonus_text.fontSize = 21f;
 
         doomTouch_text.text = "КАСАНИЕ РОКА"; doomTouch_text.font = russian_SemiBold; doomTouch_text.fontSize = 28f;
+        if (PlaceMobileButtons.isMobile == true) { doomTouch_text.fontSize = 24; }
         doomTouch2_text.text = "КАСАНИЕ РОКА"; doomTouch2_text.font = russian_SemiBold; doomTouch2_text.fontSize = 23f;
         doomTouchCursorBonus_text.text = "Бонус курсора: <color=white> Немного меньший шанс на выпадение редких сокровищ."; doomTouchCursorBonus_text.font = robotoBold; doomTouchCursorBonus_text.fontSize = 21f;
 
         solarSweep_text.text = "СОЛНЕЧНЫЙ РАЗМЕТ"; solarSweep_text.font = russian_SemiBold; solarSweep_text.fontSize = 25f;
+        if (PlaceMobileButtons.isMobile == true) { solarSweep_text.fontSize = 19; }
         solarSweep2_text.text = "СОЛНЕЧНЫЙ РАЗМЕТ"; solarSweep2_text.font = russian_SemiBold; solarSweep2_text.fontSize = 16f;
         solarSweepCursorBonus_text.text = "Бонус курсора:<color=white>  +2,5% шанса удвоить награды из сундуков"; solarSweepCursorBonus_text.font = robotoBold; solarSweepCursorBonus_text.fontSize = 21f;
 
         infernoFist_text.text = "ИНФЕРНАЛЬНЫЙ КУЛАК"; infernoFist_text.font = russian_SemiBold; infernoFist_text.fontSize = 22f;
+        if (PlaceMobileButtons.isMobile == true) { infernoFist_text.fontSize = 17; }
         infernoFist2_text.text = "ИНФЕРНАЛЬНЫЙ КУЛАК"; infernoFist2_text.font = russian_SemiBold; infernoFist2_text.fontSize = 14f;
         infernoFistCursorBonus_text.text = "Бонус курсора:<color=white>  Опыт удваивается. Стоимость каждого сокровища удваивается. 4% Шанса удвоить золото."; infernoFistCursorBonus_text.font = robotoBold; infernoFistCursorBonus_text.fontSize = 21f;
 
@@ -4463,6 +4485,7 @@ public class Localization : MonoBehaviour
         for (int i = 0; i < 17; i++)
         {
             itemsLevelUp_text[i].text = "УЛУЧШЕНИЕ"; itemsLevelUp_text[i].font = russian_SemiBold; itemsLevelUp_text[i].fontSize = 21;
+            if (PlaceMobileButtons.isMobile == true) { itemsLevelUp_text[i].fontSize = 16; }
         }
 
         goldenTouchBuff.text = "<color=yellow>+6-10 ВЫПАДЕНИЕ ЗОЛОТОЙ МОНЕТЫ"; goldenTouchBuff.font = ChangaBoldSDF1; goldenTouchBuff.fontSize = 9;
@@ -4476,26 +4499,32 @@ public class Localization : MonoBehaviour
         lockpickItemBonus_text.text = "Бонус предмета:<color=white>  Есть небольшой шанс, что при открытии сундука отмычкой выпадет сокровище"; lockpickItemBonus_text.font = robotoBold; lockpickItemBonus_text.fontSize = 21;
 
         hammer_text.text = "МОЛОТ"; hammer_text.font = russian_SemiBold; hammer_text.fontSize = 26;
+        if (PlaceMobileButtons.isMobile == true) { hammer_text.fontSize = 24; }
         hammer2_text.text = "МОЛОТ"; hammer2_text.font = russian_SemiBold; hammer2_text.fontSize = 25;
         hammerItemBonus_text.text = "Бонус предмета:<color=white>  Если вы нанесете критический удар, используя молот, с 35% шансом появится 1 золотая монета"; hammerItemBonus_text.font = robotoBold; hammerItemBonus_text.fontSize = 21;
 
         lootPotion_text.text = "ЗЕЛЬЕ ЛУТА"; lootPotion_text.font = russian_SemiBold; lootPotion_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { lootPotion_text.fontSize = 23; }
         lootPotion2_text.text = "ЗЕЛЬЕ ЛУТА"; lootPotion2_text.font = russian_SemiBold; lootPotion2_text.fontSize = 25;
         lootPotionItemBonus_text.text = "Бонус предмета:<color=white>  Сокровища, полученные во время действия этого зелья, имеют +5% шанса удвоить свою стоимость"; lootPotionItemBonus_text.font = robotoBold; lootPotionItemBonus_text.fontSize = 21;
 
         damagePotion_text.text = "ЗЕЛЬЕ УРОНА"; damagePotion_text.font = russian_SemiBold; damagePotion_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { damagePotion_text.fontSize = 20; }
         damagePotion2_text.text = "ЗЕЛЬЕ УРОНА"; damagePotion2_text.font = russian_SemiBold; damagePotion2_text.fontSize = 25;
         damagePotionItemBonus_text.text = "Бонус предмета:<color=white>  Также дает +2% шанса на крит и +50% урона от крита во время действия"; damagePotionItemBonus_text.font = robotoBold; damagePotionItemBonus_text.fontSize = 21;
 
         xpPotion_text.text = "ЗЕЛЬЕ ОПЫТА"; xpPotion_text.font = russian_SemiBold; xpPotion_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { xpPotion_text.fontSize = 20; }
         xpPotion2_text.text = "ЗЕЛЬЕ ОПЫТА"; xpPotion2_text.font = russian_SemiBold; xpPotion2_text.fontSize = 25;
         xpPotionItemBonus_text.text = "Бонус предмета:<color=white>  Каждый раз, когда вы получаете опыт, у вас есть 0.1% шанс получить +1 очко навыка"; xpPotionItemBonus_text.font = robotoBold; xpPotionItemBonus_text.fontSize = 21;
 
         goldenTouch_text.text = "ЗОЛОТОЕ КАСАНИЕ"; goldenTouch_text.font = russian_SemiBold; goldenTouch_text.fontSize = 19;
+        if (PlaceMobileButtons.isMobile == true) { goldenTouch_text.fontSize = 14; }
         goldenTouch2_text.text = "ЗОЛОТОЕ КАСАНИЕ"; goldenTouch2_text.font = russian_SemiBold; goldenTouch2_text.fontSize = 18;
         goldenTouchItemBonus_text.text = "Бонус предмета:<color=white>  Пока Золотое Касание активно, сокровища имеют +10% шанс удвоить свою стоимость"; goldenTouchItemBonus_text.font = robotoBold; goldenTouchItemBonus_text.fontSize = 21;
 
         miniChest_text.text = "МИНИ СУНДУК"; miniChest_text.font = russian_SemiBold; miniChest_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { miniChest_text.fontSize = 18; }
         miniChest2_text.text = "МИНИ СУНДУК"; miniChest2_text.font = russian_SemiBold; miniChest2_text.fontSize = 23;
         miniChestUpgradeBonus_text.text = "Бонус улучшения:<color=white>  Мини сундуки будут давать одну из трех возможных наград"; miniChestUpgradeBonus_text.font = robotoBold; miniChestUpgradeBonus_text.fontSize = 21;
         miniChestMaxHover_text.text = "МАКС УРОВЕНЬ"; miniChestMaxHover_text.font = russianNono_Bold; miniChestMaxHover_text.fontSize = 10;
@@ -4506,36 +4535,44 @@ public class Localization : MonoBehaviour
         keyItemBonus_text.text = "Бонус предмета:<color=white>  Сундуки дают от 2 до 4 дополнительных золотых монет, когда используется ключ"; keyItemBonus_text.font = robotoBold; keyItemBonus_text.fontSize = 21;
 
         treasureBag_text.text = "МЕШОК С СОКРОВИЩАМИ"; treasureBag_text.font = russian_SemiBold; treasureBag_text.fontSize = 14;
+        if (PlaceMobileButtons.isMobile == true) { treasureBag_text.fontSize = 10; }
         treasureBag2_text.text = "МЕШОК С СОКРОВИЩАМИ"; treasureBag2_text.font = russian_SemiBold; treasureBag2_text.fontSize = 13;
         treasureBagDrop_text.text = "Мешки с сокровищами будут давать 2 сокровища"; treasureBagDrop_text.font = robotoBold; treasureBagDrop_text.fontSize = 17;
         treasureBagItemBonus_text.text = "Бонус предмета:<color=white>  Сокровища из любого сундука могут выпасть. Мешки с сокровищами также дают вам 5 капель опыта"; treasureBagItemBonus_text.font = robotoBold; treasureBagItemBonus_text.fontSize = 18;
 
         serendipityScroll_text.text = "СВИТОК УДАЧИ"; serendipityScroll_text.font = russian_SemiBold; serendipityScroll_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { serendipityScroll_text.fontSize = 17; }
         serendipityScroll2_text.text = "СВИТОК УДАЧИ"; serendipityScroll2_text.font = russian_SemiBold; serendipityScroll2_text.fontSize = 20;
         serendipityScrollStatsReset_text.text = "Характеристики от свитка удачи будут сброшены при переходе на новый уровень"; serendipityScrollStatsReset_text.font = robotoBold; serendipityScrollStatsReset_text.fontSize = 21;
 
         gauntletOfGreed_text.text = "РУКАВИЦА АЛЧНОСТИ"; gauntletOfGreed_text.font = russian_SemiBold; gauntletOfGreed_text.fontSize = 18;
+        if (PlaceMobileButtons.isMobile == true) { gauntletOfGreed_text.fontSize = 12; }
         gauntletOfGreed2_text.text = "РУКАВИЦА АЛЧНОСТИ"; gauntletOfGreed2_text.font = russian_SemiBold; gauntletOfGreed2_text.fontSize = 15;
         gauntletOfGreenBonus_text.text = "Бонус предмета:<color=white>  3% Шанс создать сокровище каждым кликом"; gauntletOfGreenBonus_text.font = robotoBold; gauntletOfGreenBonus_text.fontSize = 21;
 
         magicalElixir_text.text = "ВОЛШЕБНЫЙ ЭЛИКСИР"; magicalElixir_text.font = russian_SemiBold; magicalElixir_text.fontSize = 17;
+        if (PlaceMobileButtons.isMobile == true) { magicalElixir_text.fontSize = 12; }
         magicalElixir2_text.text = "ВОЛШЕБНЫЙ ЭЛИКСИР"; magicalElixir2_text.font = russian_SemiBold; magicalElixir2_text.fontSize = 14;
         magicalElixirItemBonus_text.text = "Бонус предмета:<color=white>  +0.3% шанс выпадения к каждому сокровищу пока Эликсир активен"; magicalElixirItemBonus_text.font = robotoBold; magicalElixirItemBonus_text.fontSize = 21;
 
         ancientRelic_text.text = "ДРЕВНЯЯ РЕЛИКВИЯ"; ancientRelic_text.font = russian_SemiBold; ancientRelic_text.fontSize = 18;
+        if (PlaceMobileButtons.isMobile == true) { ancientRelic_text.fontSize = 13.5f; }
         ancientRelic2_text.text = "ДРЕВНЯЯ РЕЛИКВИЯ"; ancientRelic2_text.font = russian_SemiBold; ancientRelic2_text.fontSize = 16;
         ancientRelicGivesBuff_text.text = "Дает постоянный бафф на случайную характеристику"; ancientRelicGivesBuff_text.font = robotoBold; ancientRelicGivesBuff_text.fontSize = 22;
         ancientRelicKeepBuff_text.text = "Вы сохраните каждый бафф, полученный от древней реликвии после престижа"; ancientRelicKeepBuff_text.font = robotoBold; ancientRelicKeepBuff_text.fontSize = 21;
 
         enchantedHammer_text.text = "ЗАЧАРОВАННЫЙ МОЛОТ"; enchantedHammer_text.font = russian_SemiBold; enchantedHammer_text.fontSize = 16;
+        if (PlaceMobileButtons.isMobile == true) { enchantedHammer_text.fontSize = 11.5f; }
         enchantedHammer2_text.text = "ЗАЧАРОВАННЫЙ МОЛОТ"; enchantedHammer2_text.font = russian_SemiBold; enchantedHammer2_text.fontSize = 14;
         enchantedHammerItemBonus_text.text = "Бонус предмета:<color=white>  2% Шанс утроить награды с сундука"; enchantedHammerItemBonus_text.font = robotoBold; enchantedHammerItemBonus_text.fontSize = 21;
 
         treasurePotion_text.text = "ЗЕЛЬЕ СОКРОВИЩ"; treasurePotion_text.font = russian_SemiBold; treasurePotion_text.fontSize = 21;
+        if (PlaceMobileButtons.isMobile == true) { treasurePotion_text.fontSize = 14.5f; }
         treasurePotion2_text.text = "ЗЕЛЬЕ СОКРОВИЩ"; treasurePotion2_text.font = russian_SemiBold; treasurePotion2_text.fontSize = 20;
         treasurePotionItemBonus_text.text = "Бонус предмета:<color=white>  Полученные предметы имеют +25% шанс удвоить свою стоимость"; treasurePotionItemBonus_text.font = robotoBold; treasurePotionItemBonus_text.fontSize = 21;
 
         barrelOfGold_text.text = "БОЧОНОК ЗОЛОТА"; barrelOfGold_text.font = russian_SemiBold; barrelOfGold_text.fontSize = 19;
+        if (PlaceMobileButtons.isMobile == true) { barrelOfGold_text.fontSize = 14; }
         barrelOfGold2_text.text = "БОЧОНОК ЗОЛОТА"; barrelOfGold2_text.font = russian_SemiBold; barrelOfGold2_text.fontSize = 20;
         barrelOfGoldBonus_text.text = "Бонус предмета:<color=white>  Выберите, куда поставить бочонок, перетащив его"; barrelOfGoldBonus_text.font = robotoBold; barrelOfGoldBonus_text.fontSize = 21;
         barrelSpawns_text.text = "Появляется бочонок."; barrelSpawns_text.font = robotoBold; barrelSpawns_text.fontSize = 24;
@@ -4543,6 +4580,7 @@ public class Localization : MonoBehaviour
         clickToCollect_text.text = "Нажмите, чтобы собрать!"; clickToCollect_text.font = russianNonoBoldOutLine; clickToCollect_text.fontSize = 12;
 
         mimicChest_text.text = "СУНДУК-МИМИК"; mimicChest_text.font = russian_SemiBold; mimicChest_text.fontSize = 23;
+        if (PlaceMobileButtons.isMobile == true) { mimicChest_text.fontSize = 16.5f; }
         mimicChest2_text.text = "СУНДУК-МИМИК"; mimicChest2_text.font = russian_SemiBold; mimicChest2_text.fontSize = 20;
         mimicChestItemBonus_text.text = "Бонус предмета: <color=white> Положительные баффы имеют 15% шанс продлиться вдвое"; mimicChestItemBonus_text.font = robotoBold; mimicChestItemBonus_text.fontSize = 21;
         turnedOff_text.text = "ВЫКЛЮЧЕНО"; turnedOff_text.font = russian_SemiBold; turnedOff_text.fontSize = 18;
@@ -5460,6 +5498,7 @@ public class Localization : MonoBehaviour
         playGame.text = "ИГРАТЬ"; playGame.font = russianNono_MediumOutLine; playGame.fontSize = 65;
 
         welcomeBack.text = "С ВОЗВРАЩЕНИЕМ!"; welcomeBack.font = russianNonoBoldOutLine; welcomeBack.fontSize = 65;
+        if(PlaceMobileButtons.isMobile == true) { welcomeBack.fontSize = 30; }
         thisHappendWhileGone.text = "Вот что произошло, пока вас не было..."; thisHappendWhileGone.font = russianNono_MediumOutLine; thisHappendWhileGone.fontSize = 27;
         cool.text = "Круто!"; cool.font = russianNonoBoldOutLine; cool.fontSize = 42;
         timeGone.text = "Времени прошло:"; timeGone.font = russianNonoBoldOutLine; timeGone.fontSize = 55;
@@ -6686,6 +6725,7 @@ public class Localization : MonoBehaviour
         for (int i = 0; i < 21; i++)
         {
             levelUp_text[i].text = "アップグレード"; levelUp_text[i].font = japaneseSemiBold; levelUp_text[i].fontSize = 20;
+            if (PlaceMobileButtons.isMobile == true) { levelUp_text[i].fontSize = 15; }
         }
 
         // Cursors - Others
@@ -6733,27 +6773,34 @@ public class Localization : MonoBehaviour
         levelUpCursors_text.text = "あなたの宝物を費やすことによって、あなたのカーソルをレベルアップ。"; levelUpCursors_text.font = japaneseRegular; levelUpCursors_text.fontSize = 21.5f;
 
         gentleTap_text.text = "ジェントルタップ"; gentleTap_text.font = japaneseSemiBold; gentleTap_text.fontSize = 35f;
+        if(PlaceMobileButtons.isMobile == true) { gentleTap_text.fontSize = 23f; }
         gentleTap2_text.text = "ジェントルタップ"; gentleTap2_text.font = japaneseSemiBold; gentleTap2_text.fontSize = 24f;
         gentleTapCursorBonus_text.text = "カーソルボーナス：クリックするたびに1％の確率で1つの金貨が生成されます"; gentleTapCursorBonus_text.font = japaneseBold; gentleTapCursorBonus_text.fontSize = 21f;
         relaxedPalm_text.text = "リラックスした手のひら"; relaxedPalm_text.font = japaneseSemiBold; relaxedPalm_text.fontSize = 24f;
+        if (PlaceMobileButtons.isMobile == true) { relaxedPalm_text.fontSize = 17f; }
         relaxedPalm2_text.text = "リラックスした手のひら"; relaxedPalm2_text.font = japaneseSemiBold; relaxedPalm2_text.fontSize = 17f;
         relaxedPalmCursorBonus_text.text = "カーソルボーナス：開かれた10個のチェストごとに25％のチャンスがあり、5個の金貨をスポーンします"; relaxedPalmCursorBonus_text.font = japaneseBold; relaxedPalmCursorBonus_text.fontSize = 21f;
         galeForce_text.text = "ゲイルフォース"; galeForce_text.font = japaneseSemiBold; galeForce_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { galeForce_text.fontSize = 27f; }
         galeForce2_text.text = "ゲイルフォース"; galeForce2_text.font = japaneseSemiBold; galeForce2_text.fontSize = 24f;
         galeForceCursorBonus_text.text = "カーソルボーナス：あなたがクリティカルヒットを扱うたびに、25％のチャンスがあります1金貨をスポーン"; galeForceCursorBonus_text.font = japaneseBold; galeForceCursorBonus_text.fontSize = 21f;
         radiantTouch_text.text = "ラディアントタッチ"; radiantTouch_text.font = japaneseSemiBold; radiantTouch_text.fontSize = 18f;
         radiantTouch2_text.text = "ラディアントタッチ"; radiantTouch2_text.font = japaneseSemiBold; radiantTouch2_text.fontSize = 19f;
         radiantTouchCursorBonus_text.text = "カーソルボーナス：開いたチェストごとに7つの金貨を35個スポーンします"; radiantTouchCursorBonus_text.font = japaneseBold; radiantTouchCursorBonus_text.fontSize = 21f;
         energySurge_text.text = "エネルギーサージ"; energySurge_text.font = japaneseSemiBold; energySurge_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { energySurge_text.fontSize = 24f; }
         energySurge2_text.text = "エネルギーサージ"; energySurge2_text.font = japaneseSemiBold; energySurge2_text.fontSize = 24f;
         energySurgeCursorBonus_text.text = "カーソルボーナス：すべての宝物は+0.1％のドロップチャンスを得る"; energySurgeCursorBonus_text.font = japaneseBold; energySurgeCursorBonus_text.fontSize = 21f;
         phantomPalm_text.text = "ファントムパーム"; phantomPalm_text.font = japaneseSemiBold; phantomPalm_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { phantomPalm_text.fontSize = 25f; }
         phantomPalm2_text.text = "ファントムパーム"; phantomPalm2_text.font = japaneseSemiBold; phantomPalm2_text.fontSize = 24f;
         phantomPalmCursorBonus_text.text = "カーソルボーナス：すべてのクリティカルヒットは、宝をスポーンする7％のチャンスを持っています。各宝物は、3％が値の倍を行う持っています"; phantomPalmCursorBonus_text.font = japaneseBold; phantomPalmCursorBonus_text.fontSize = 17f;
         steelStrike_text.text = "スチールストライク"; steelStrike_text.font = japaneseSemiBold; steelStrike_text.fontSize = 30f;
+        if (PlaceMobileButtons.isMobile == true) { steelStrike_text.fontSize = 22f; }
         steelStrike2_text.text = "スチールストライク"; steelStrike2_text.font = japaneseSemiBold; steelStrike2_text.fontSize = 20f;
         steelStrikeCursorBonus_text.text = "カーソルボーナス:+5%より多くの金.+5%より多くのXP"; steelStrikeCursorBonus_text.font = japaneseBold; steelStrikeCursorBonus_text.fontSize = 21f;
         lethalTouch_text.text = "致命的なタッチ"; lethalTouch_text.font = japaneseSemiBold; lethalTouch_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { lethalTouch_text.fontSize = 28f; }
         lethalTouch2_text.text = "致命的なタッチ"; lethalTouch2_text.font = japaneseSemiBold; lethalTouch2_text.fontSize = 24f;
         lethalTouchCursorBonus_text.text = "カーソルボーナス：チェストが開かれるたびに、6％のチャンスがありますダブルXPを与える"; lethalTouchCursorBonus_text.font = japaneseBold; lethalTouchCursorBonus_text.fontSize = 21f;
         precisionPoint_text.text = "精密ポイント"; precisionPoint_text.font = japaneseSemiBold; precisionPoint_text.fontSize = 35f;
@@ -6766,15 +6813,19 @@ public class Localization : MonoBehaviour
         cursedClaw2_text.text = "呪われた爪"; cursedClaw2_text.font = japaneseSemiBold; cursedClaw2_text.fontSize = 24f; //11
         cursedClawCursorBonus_text.text = "カーソルボーナス：クリティカルヒットが配られるたびに、金貨をスポーンする30％のチャンスと宝をスポーンする3％のチャンスがあります"; cursedClawCursorBonus_text.font = japaneseBold; cursedClawCursorBonus_text.fontSize = 17f;
         sniperClick_text.text = "スナイパークリック"; sniperClick_text.font = japaneseSemiBold; sniperClick_text.fontSize = 28f;
+        if (PlaceMobileButtons.isMobile == true) { sniperClick_text.fontSize = 22f; }
         sniperClick2_text.text = "スナイパークリック"; sniperClick2_text.font = japaneseSemiBold; sniperClick2_text.fontSize = 19f; 
         sniperClickCursorBonus_text.text = "カーソルボーナス:10%より多くのゴールドと15%より多くのXP"; sniperClickCursorBonus_text.font = japaneseBold; sniperClickCursorBonus_text.fontSize = 21f;
         shadowSurge_text.text = "シャドウサージ"; shadowSurge_text.font = japaneseSemiBold; shadowSurge_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { shadowSurge_text.fontSize = 28f; }
         shadowSurge2_text.text = "シャドウサージ"; shadowSurge2_text.font = japaneseSemiBold; shadowSurge2_text.fontSize = 24f;
         shadowSurgeCursorBonus_text.text = "カーソルボーナス：すべてのクリティカルヒットは1金貨をスポーンします"; shadowSurgeCursorBonus_text.font = japaneseBold; shadowSurgeCursorBonus_text.fontSize = 21f;
         cripplingCrush_text.text = "クリップリングクラッシュ"; cripplingCrush_text.font = japaneseSemiBold; cripplingCrush_text.fontSize = 23f;
+        if(PlaceMobileButtons.isMobile == true) { cripplingCrush_text.fontSize = 17f; }
         cripplingCrush2_text.text = "クリップリングクラッシュ"; cripplingCrush2_text.font = japaneseSemiBold; cripplingCrush2_text.fontSize = 15f;
         cripplingCrushCursorBonus_text.text = "カーソルボーナス：あなたが宝物を得るたびに、それは価値が倍増する25％のチャンスを持っています"; cripplingCrushCursorBonus_text.font = japaneseBold; cripplingCrushCursorBonus_text.fontSize = 21f;
         rapidClick_text.text = "クイッククリック"; rapidClick_text.font = japaneseSemiBold; rapidClick_text.fontSize = 30f;
+        if (PlaceMobileButtons.isMobile == true) { rapidClick_text.fontSize = 25f; }
         rapidClick2_text.text = "クイッククリック"; rapidClick2_text.font = japaneseSemiBold; rapidClick2_text.fontSize = 24f;
         rapidClickCursorBonus_text.text = "カーソルボーナス：すべてのクリティカルヒットは、宝物をスポーンする13％のチャンスを持っています"; rapidClickCursorBonus_text.font = japaneseBold; rapidClickCursorBonus_text.fontSize = 21f;
         celestialTouch_text.text = "天のタッチ"; celestialTouch_text.font = japaneseSemiBold; celestialTouch_text.fontSize = 35f;
@@ -6784,15 +6835,19 @@ public class Localization : MonoBehaviour
         arcaneClick2_text.text = "秘儀クリック"; arcaneClick2_text.font = japaneseSemiBold; arcaneClick2_text.fontSize = 24f;
         arcaneClickCursorBonus_text.text = "カーソルボーナス：すべての宝の価値が2倍になります."; arcaneClickCursorBonus_text.font = japaneseBold; arcaneClickCursorBonus_text.fontSize = 21f;
         eternalTouch_text.text = "エターナルタッチ"; eternalTouch_text.font = japaneseSemiBold; eternalTouch_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { eternalTouch_text.fontSize = 25f; }
         eternalTouch2_text.text = "エターナルタッチ"; eternalTouch2_text.font = japaneseSemiBold; eternalTouch2_text.fontSize = 24f;
         eternalTouchCursorBonus_text.text = "カーソルボーナス：XPと宝物が2倍になります。すべてのクリックで金貨を得るために5％のチャンス"; eternalTouchCursorBonus_text.font = japaneseBold; eternalTouchCursorBonus_text.fontSize = 21f;
         doomTouch_text.text = "ドゥームタッチ"; doomTouch_text.font = japaneseSemiBold; doomTouch_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { doomTouch_text.fontSize = 28f; }
         doomTouch2_text.text = "ドゥームタッチ"; doomTouch2_text.font = japaneseSemiBold; doomTouch2_text.fontSize = 24f;
         doomTouchCursorBonus_text.text = "カーソルボーナス:まれな宝の滴のためのわずかに小さいチャンス."; doomTouchCursorBonus_text.font = japaneseBold; doomTouchCursorBonus_text.fontSize = 21f;
         solarSweep_text.text = "ソーラースイープ"; solarSweep_text.font = japaneseSemiBold; solarSweep_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { solarSweep_text.fontSize = 24f; }
         solarSweep2_text.text = "ソーラースイープ"; solarSweep2_text.font = japaneseSemiBold; solarSweep2_text.fontSize = 24f;
         solarSweepCursorBonus_text.text = "カーソルボーナス:+2.5%チェスト報酬を倍増するチャンス"; solarSweepCursorBonus_text.font = japaneseBold; solarSweepCursorBonus_text.fontSize = 21f;
         infernoFist_text.text = "インフェルノ-フィスト"; infernoFist_text.font = japaneseSemiBold; infernoFist_text.fontSize = 25f;
+        if (PlaceMobileButtons.isMobile == true) { infernoFist_text.fontSize = 19f; }
         infernoFist2_text.text = "インフェルノ-フィスト"; infernoFist2_text.font = japaneseSemiBold; infernoFist2_text.fontSize = 18f;
         infernoFistCursorBonus_text.text = "カーソルボーナス：XPは2倍になります。すべての宝物は価値が2倍になります。4%ゴールドを倍増するチャンス."; infernoFistCursorBonus_text.font = japaneseBold; infernoFistCursorBonus_text.fontSize = 21f;
         locked_text.text = "ロックされた"; locked_text.font = japaneseSemiBold; locked_text.fontSize = 32f;
@@ -7817,6 +7872,7 @@ public class Localization : MonoBehaviour
         playGame.text = "プレイ"; playGame.font = japaneseMediumOutline; playGame.fontSize = 62;
 
         welcomeBack.text = "おかえりなさい!"; welcomeBack.font = japaneseBoldOutline; welcomeBack.fontSize = 65;
+        if(PlaceMobileButtons.isMobile == true) { welcomeBack.fontSize = 38; }
         thisHappendWhileGone.text = "これはあなたがいなくなっている間に起こりました。.."; thisHappendWhileGone.font = japaneseMediumOutline; thisHappendWhileGone.fontSize = 27;
         cool.text = "かっこいい!"; cool.font = japaneseBoldOutline; cool.fontSize = 34;
         timeGone.text = "時間がなくなった:"; timeGone.font = japaneseBoldOutline; timeGone.fontSize = 55;
@@ -11371,6 +11427,7 @@ public class Localization : MonoBehaviour
 
         // Cursors - Cursor 2
         cursor2ActiveDamage_Text.text = "+0% 액티브 데미지"; cursor2ActiveDamage_Text.font = koreanFont; cursor2ActiveDamage_Text.fontSize = 20;
+   
         cursor2CritChance_Text.text = "+0% 크리티컬 가능성"; cursor2CritChance_Text.font = koreanFont; cursor2CritChance_Text.fontSize = 20;
         cursor2CritDamage_Text.text = "+0% 크리티컬 데미지"; cursor2CritDamage_Text.font = koreanFont; cursor2CritDamage_Text.fontSize = 20;
 
@@ -11412,12 +11469,14 @@ public class Localization : MonoBehaviour
         gentleTap2_text.text = "젠틀 탭"; gentleTap2_text.font = koreanFont; gentleTap2_text.fontSize = 24f;
         gentleTapCursorBonus_text.text = "커서 보너스: 매 클릭마다 1 골드 코인을 스폰할 가능성 1%를 얻습니다"; gentleTapCursorBonus_text.font = koreanFont; gentleTapCursorBonus_text.fontSize = 21f;
         relaxedPalm_text.text = "안정된 손바닥"; relaxedPalm_text.font = koreanFont; relaxedPalm_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { relaxedPalm_text.fontSize = 32; }
         relaxedPalm2_text.text = "안정된 손바닥"; relaxedPalm2_text.font = koreanFont; relaxedPalm2_text.fontSize = 24f;
         relaxedPalmCursorBonus_text.text = "커서 보너스: 상자 10개를 오픈할마다 5 골드 코인을 스폰할 가능성 25%를 얻습니다"; relaxedPalmCursorBonus_text.font = koreanFont; relaxedPalmCursorBonus_text.fontSize = 21f;
         galeForce_text.text = "강풍 포스"; galeForce_text.font = koreanFont; galeForce_text.fontSize = 35f;
         galeForce2_text.text = "강풍 포스"; galeForce2_text.font = koreanFont; galeForce2_text.fontSize = 24f;
         galeForceCursorBonus_text.text = "커서 보너스: 크리티컬 히트를 가할 때마다 1골드 코인을 스폰할 가능성 25%를 얻습니다"; galeForceCursorBonus_text.font = koreanFont; galeForceCursorBonus_text.fontSize = 21f;
         radiantTouch_text.text = "레이디언트 터치"; radiantTouch_text.font = koreanFont; radiantTouch_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { radiantTouch_text.fontSize = 29; }
         radiantTouch2_text.text = "레이디언트 터치"; radiantTouch2_text.font = koreanFont; radiantTouch2_text.fontSize = 24f;
         radiantTouchCursorBonus_text.text = "커서 보너스: 상자 35개를 오픈할 때마다 7 골드 코인을 스폰합니다"; radiantTouchCursorBonus_text.font = koreanFont; radiantTouchCursorBonus_text.fontSize = 21f;
         energySurge_text.text = "에너지 파동"; energySurge_text.font = koreanFont; energySurge_text.fontSize = 35f;
@@ -11427,6 +11486,7 @@ public class Localization : MonoBehaviour
         phantomPalm2_text.text = "팬텀 손바닥"; phantomPalm2_text.font = koreanFont; phantomPalm2_text.fontSize = 24f;
         phantomPalmCursorBonus_text.text = "커서 보너스: 모든 크리티컬 히트는 보물을 스폰할 7 % 의 가능성을 얻습니다.각 보물들은 가치를 두배로 뛰게 할 3 % 의 가능성을 얻습니다"; phantomPalmCursorBonus_text.font = koreanFont; phantomPalmCursorBonus_text.fontSize = 21f;
         steelStrike_text.text = "강철 스트라이크"; steelStrike_text.font = koreanFont; steelStrike_text.fontSize = 35f;
+        if (PlaceMobileButtons.isMobile == true) { steelStrike_text.fontSize = 28; }
         steelStrike2_text.text = "강철 스트라이크"; steelStrike2_text.font = koreanFont; steelStrike2_text.fontSize = 24f;
         steelStrikeCursorBonus_text.text = "커서 보너스: 골드를 5% 더 받습니다. XP도 5% 더 받습니다"; steelStrikeCursorBonus_text.font = koreanFont; steelStrikeCursorBonus_text.fontSize = 21f;
         lethalTouch_text.text = "치명적인 터치"; lethalTouch_text.font = koreanFont; lethalTouch_text.fontSize = 35f;
@@ -11529,10 +11589,12 @@ public class Localization : MonoBehaviour
         treasureBagItemBonus_text.text = "아이템 보너스: 아무 상자로부터 나온 보물들이 드롭할 수 있습니다. 보물 가방들은 또한 5 XP 드롭을 부여합니다"; treasureBagItemBonus_text.font = koreanFont; treasureBagItemBonus_text.fontSize = 21;
 
         serendipityScroll_text.text = "세런디피티 두루마리"; serendipityScroll_text.font = koreanFont; serendipityScroll_text.fontSize = 25;
+        if(PlaceMobileButtons.isMobile == true) { serendipityScroll_text.fontSize = 16; }
         serendipityScroll2_text.text = "세런디피티 두루마리"; serendipityScroll2_text.font = koreanFont; serendipityScroll2_text.fontSize = 20;
         serendipityScrollStatsReset_text.text = "세런디피티 두루마리에 영향 받은 스탯은 프레스티지에서 초기화될 것입니다"; serendipityScrollStatsReset_text.font = koreanFont; serendipityScrollStatsReset_text.fontSize = 21;
 
         gauntletOfGreed_text.text = "욕망의 긴 장갑"; gauntletOfGreed_text.font = koreanFont; gauntletOfGreed_text.fontSize = 25;
+        if (PlaceMobileButtons.isMobile == true) { gauntletOfGreed_text.fontSize = 22; }
         gauntletOfGreed2_text.text = "욕망의 긴 장갑"; gauntletOfGreed2_text.font = koreanFont; gauntletOfGreed2_text.fontSize = 20;
         gauntletOfGreenBonus_text.text = "아이템 보너스: 모든 클릭으로부터 보물을 스폰할 가능성 3%"; gauntletOfGreenBonus_text.font = koreanFont; gauntletOfGreenBonus_text.fontSize = 21;
 
@@ -12479,6 +12541,7 @@ public class Localization : MonoBehaviour
         playGame.text = "플레이하기  "; playGame.font = koreanFont; playGame.fontSize = 50;
 
         welcomeBack.text = "돌아오신 것을 환영합니다"; welcomeBack.font = koreanFont; welcomeBack.fontSize = 65;
+        if(PlaceMobileButtons.isMobile == true) { welcomeBack.fontSize = 28; }
         thisHappendWhileGone.text = "게임에서 나가시고 나서 이런 일이 발생했습니다…"; thisHappendWhileGone.font = koreanFont; thisHappendWhileGone.fontSize = 27;
         cool.text = "멋지네요!"; cool.font = koreanFont; cool.fontSize = 42;
         timeGone.text = "지나간 시간:"; timeGone.font = koreanFont; timeGone.fontSize = 55;
@@ -13394,7 +13457,7 @@ public class Localization : MonoBehaviour
 
     public TextMeshProUGUI settingsClose, informationClose, achievementsClose, statsClose, prestigeInfoClose, rareTreasureClose, treasureClose, itemsInfoCLose, cursorInfoClose, chestInfoClose, activeClose, passiveClose, turnOff, turnOn, autoPurchaseChestClose, prestigeUpgradeClose, prestigeUpgradeBuy;
 
-    public TextMeshProUGUI miscText, bucketClaimText, bucketCloseText;
+    public TextMeshProUGUI miscText, bucketClaimText, bucketCloseText, settingsText2;
     //remeber barrel
 
     public PlaceMobileButtons mobileScript;
@@ -13405,14 +13468,15 @@ public class Localization : MonoBehaviour
         if (EnglishLanguageChosen == 1)
         {
             miscText.text = "Misc"; miscText.font = ChangaBoldSDF1; miscText.fontSize = 130;
-            bucketClaimText.text = "CLAIM"; bucketClaimText.font = ChangaBoldSDF1; miscText.fontSize = 42;
-            bucketCloseText.text = "CLOSE"; bucketCloseText.font = ChangaBoldSDF1; miscText.fontSize = 42;
+            bucketClaimText.text = "CLAIM"; bucketClaimText.font = ChangaBoldSDF1; bucketClaimText.fontSize = 42;
+            bucketCloseText.text = "CLOSE"; bucketCloseText.font = ChangaBoldSDF1; bucketCloseText.fontSize = 42;
 
             findTheCookie = "Find the cookie!";
             cookieCliker = "Cookie clicker!";
             useTheChicken = "Use the chicken";
 
             settingsText.text = "SETTINGS"; settingsText.font = ChangaBoldSDF1; settingsText.fontSize = 66;
+            settingsText2.text = "Settings"; settingsText2.font = ChangaBoldSDF1; settingsText2.fontSize = 42;
             informationText.text = "INFORMATION"; informationText.font = ChangaBoldSDF1; informationText.fontSize = 55;
             achievementsText.text = "ACHIEVEMENTS"; achievementsText.font = ChangaBoldSDF1; achievementsText.fontSize = 48;
             statisticsText.text = "STATS"; statisticsText.font = ChangaBoldSDF1; statisticsText.fontSize = 65;
@@ -13424,8 +13488,8 @@ public class Localization : MonoBehaviour
             achievementsClose.text = "CLOSE"; achievementsClose.font = ChangaBoldSDF1; achievementsClose.fontSize = 84;
             statsClose.text = "CLOSE"; statsClose.font = ChangaBoldSDF1; statsClose.fontSize = 84;
             prestigeInfoClose.text = "CLOSE"; prestigeInfoClose.font = ChangaBoldSDF1; prestigeInfoClose.fontSize = 58;
-            rareTreasureClose.text = "CLOSE"; rareTreasureClose.font = ChangaBoldSDF1; rareTreasureClose.fontSize = 59;
-            treasureClose.text = "CLOSE"; treasureClose.font = ChangaBoldSDF1; treasureClose.fontSize = 67;
+            rareTreasureClose.text = "CLOSE"; rareTreasureClose.font = ChangaBoldSDF1; rareTreasureClose.fontSize = 39;
+            treasureClose.text = "CLOSE"; treasureClose.font = ChangaBoldSDF1; treasureClose.fontSize = 40;
             itemsInfoCLose.text = "CLOSE"; itemsInfoCLose.font = ChangaBoldSDF1; itemsInfoCLose.fontSize = 32;
             cursorInfoClose.text = "CLOSE"; cursorInfoClose.font = ChangaBoldSDF1; cursorInfoClose.fontSize = 32;
             chestInfoClose.text = "CLOSE"; chestInfoClose.font = ChangaBoldSDF1; chestInfoClose.fontSize = 50;
@@ -13446,36 +13510,37 @@ public class Localization : MonoBehaviour
             bucketCloseText.text = "Закрыть";
 
             miscText.font = russianNono_Bold; miscText.fontSize = 130;
-            bucketClaimText.font = russianNono_Bold; miscText.fontSize = 42;
-            bucketCloseText.font = russianNono_Bold; miscText.fontSize = 42;
+            bucketClaimText.font = russianNono_Bold; bucketClaimText.fontSize = 26;
+            bucketCloseText.font = russianNono_Bold; bucketCloseText.fontSize = 26;
 
             findTheCookie = "Найти печеньку!";
             cookieCliker = "Кликер печенек!";
             useTheChicken = "Использовать курицу";
 
-            settingsText.text = "Настройки"; settingsText.font = russianNono_Bold; settingsText.fontSize = 66;
+            settingsText2.text = "Настройки"; settingsText2.font = russianNono_Bold; settingsText2.fontSize = 31;
+            settingsText.text = "Настройки"; settingsText.font = russianNono_Bold; settingsText.fontSize = 42;
             informationText.text = "ИНФО"; informationText.font = russianNono_Bold; informationText.fontSize = 55;
-            achievementsText.text = "ДОСТИЖЕНИЯ"; achievementsText.font = russianNono_Bold; achievementsText.fontSize = 48;
-            statisticsText.text = "СТАТИСТИКА"; statisticsText.font = russianNono_Bold; statisticsText.fontSize = 65;
+            achievementsText.text = "ДОСТИЖЕНИЯ"; achievementsText.font = russianNono_Bold; achievementsText.fontSize = 38;
+            statisticsText.text = "СТАТИСТИКА"; statisticsText.font = russianNono_Bold; statisticsText.fontSize = 41;
             info = "ИНФО";
             chest = "Сундук";
 
-            settingsClose.text = "Закрыть"; settingsClose.font = russianNono_Bold; settingsClose.fontSize = 83;
-            informationClose.text = "Закрыть"; informationClose.font = russianNono_Bold; informationClose.fontSize = 83;
-            achievementsClose.text = "Закрыть"; achievementsClose.font = russianNono_Bold; achievementsClose.fontSize = 84;
-            statsClose.text = "Закрыть"; statsClose.font = russianNono_Bold; statsClose.fontSize = 84;
-            prestigeInfoClose.text = "Закрыть"; prestigeInfoClose.font = russianNono_Bold; prestigeInfoClose.fontSize = 58;
+            settingsClose.text = "Закрыть"; settingsClose.font = russianNono_Bold; settingsClose.fontSize = 66;
+            informationClose.text = "Закрыть"; informationClose.font = russianNono_Bold; informationClose.fontSize = 66;
+            achievementsClose.text = "Закрыть"; achievementsClose.font = russianNono_Bold; achievementsClose.fontSize = 47;
+            statsClose.text = "Закрыть"; statsClose.font = russianNono_Bold; statsClose.fontSize = 39;
+            prestigeInfoClose.text = "Закрыть"; prestigeInfoClose.font = russianNono_Bold; prestigeInfoClose.fontSize = 39;
             rareTreasureClose.text = "Закрыть"; rareTreasureClose.font = russianNono_Bold; rareTreasureClose.fontSize = 59;
             treasureClose.text = "Закрыть"; treasureClose.font = russianNono_Bold; treasureClose.fontSize = 67;
             itemsInfoCLose.text = "Закрыть"; itemsInfoCLose.font = russianNono_Bold; itemsInfoCLose.fontSize = 32;
             cursorInfoClose.text = "Закрыть"; cursorInfoClose.font = russianNono_Bold; cursorInfoClose.fontSize = 32;
-            chestInfoClose.text = "Закрыть"; chestInfoClose.font = russianNono_Bold; chestInfoClose.fontSize = 50;
-            activeClose.text = "Закрыть"; activeClose.font = russianNono_Bold; activeClose.fontSize = 99;
-            passiveClose.text = "Закрыть"; passiveClose.font = russianNono_Bold; passiveClose.fontSize = 99;
-            turnOff.text = "Включить"; turnOff.font = russianNono_Bold; turnOff.fontSize = 30;
-            turnOn.text = "Выключить"; turnOn.font = russianNono_Bold; turnOn.fontSize = 30;
-            autoPurchaseChestClose.text = "Закрыть"; autoPurchaseChestClose.font = russianNono_Bold; autoPurchaseChestClose.fontSize = 56;
-            prestigeUpgradeClose.text = "Закрыть"; prestigeUpgradeClose.font = russianNono_Bold; prestigeUpgradeClose.fontSize = 90;
+            chestInfoClose.text = "Закрыть"; chestInfoClose.font = russianNono_Bold; chestInfoClose.fontSize = 33;
+            activeClose.text = "Закрыть"; activeClose.font = russianNono_Bold; activeClose.fontSize = 77;
+            passiveClose.text = "Закрыть"; passiveClose.font = russianNono_Bold; passiveClose.fontSize = 77;
+            turnOff.text = "Включить"; turnOff.font = russianNono_Bold; turnOff.fontSize = 22;
+            turnOn.text = "Выключить"; turnOn.font = russianNono_Bold; turnOn.fontSize = 22;
+            autoPurchaseChestClose.text = "Закрыть"; autoPurchaseChestClose.font = russianNono_Bold; autoPurchaseChestClose.fontSize = 39;
+            prestigeUpgradeClose.text = "Закрыть"; prestigeUpgradeClose.font = russianNono_Bold; prestigeUpgradeClose.fontSize = 51;
             prestigeUpgradeBuy.text = "Купить"; prestigeUpgradeBuy.font = russianNono_Bold; prestigeUpgradeBuy.fontSize = 60;
         }
 
@@ -13486,14 +13551,15 @@ public class Localization : MonoBehaviour
             bucketClaimText.text = "得る";
             bucketCloseText.text = "出口";
 
-            miscText.font = japaneseSemiBold; miscText.fontSize = 130;
-            bucketClaimText.font = japaneseSemiBold; miscText.fontSize = 42;
-            bucketCloseText.font = japaneseSemiBold; miscText.fontSize = 42;
+            miscText.font = japaneseSemiBold; miscText.fontSize = 100;
+            bucketClaimText.font = japaneseSemiBold; bucketClaimText.fontSize = 42;
+            bucketCloseText.font = japaneseSemiBold; bucketCloseText.fontSize = 42;
 
             findTheCookie = "クッキーを見つけよう!";
             cookieCliker = "クッキークリッカー!";
             useTheChicken = "鶏肉を使う";
 
+            settingsText2.text = "設定"; settingsText2.font = japaneseSemiBold; settingsText2.fontSize = 42;
             settingsText.text = "設定"; settingsText.font = japaneseSemiBold; settingsText.fontSize = 66;
             informationText.text = "情報"; informationText.font = japaneseSemiBold; informationText.fontSize = 55;
             achievementsText.text = "実績"; achievementsText.font = japaneseSemiBold; achievementsText.fontSize = 48;
@@ -13505,9 +13571,9 @@ public class Localization : MonoBehaviour
             informationClose.text = "出口"; informationClose.font = japaneseSemiBold; informationClose.fontSize = 83;
             achievementsClose.text = "出口"; achievementsClose.font = japaneseSemiBold; achievementsClose.fontSize = 84;
             statsClose.text = "出口"; statsClose.font = japaneseSemiBold; statsClose.fontSize = 84;
-            prestigeInfoClose.text = "出口"; prestigeInfoClose.font = japaneseSemiBold; prestigeInfoClose.fontSize = 58;
-            rareTreasureClose.text = "出口"; rareTreasureClose.font = japaneseSemiBold; rareTreasureClose.fontSize = 59;
-            treasureClose.text = "出口"; treasureClose.font = japaneseSemiBold; treasureClose.fontSize = 67;
+            prestigeInfoClose.text = "出口"; prestigeInfoClose.font = japaneseSemiBold; prestigeInfoClose.fontSize = 54;
+            rareTreasureClose.text = "出口"; rareTreasureClose.font = japaneseSemiBold; rareTreasureClose.fontSize = 37;
+            treasureClose.text = "出口"; treasureClose.font = japaneseSemiBold; treasureClose.fontSize = 41;
             itemsInfoCLose.text = "出口"; itemsInfoCLose.font = japaneseSemiBold; itemsInfoCLose.fontSize = 32;
             cursorInfoClose.text = "出口"; cursorInfoClose.font = japaneseSemiBold; cursorInfoClose.fontSize = 32;
             chestInfoClose.text = "出口"; chestInfoClose.font = japaneseSemiBold; chestInfoClose.fontSize = 50;
@@ -13528,13 +13594,14 @@ public class Localization : MonoBehaviour
             bucketCloseText.text = "关闭";
 
             miscText.font = chineseFont; miscText.fontSize = 130;
-            bucketClaimText.font = chineseFont; miscText.fontSize = 42;
-            bucketCloseText.font = chineseFont; miscText.fontSize = 42;
+            bucketClaimText.font = chineseFont; bucketClaimText.fontSize = 42;
+            bucketCloseText.font = chineseFont; bucketCloseText.fontSize = 42;
 
             findTheCookie = "找到饼干！";
             cookieCliker = "饼干点击大师！";
             useTheChicken = "使用鸡";
-            
+
+            settingsText2.text = "设置"; settingsText2.font = chineseFont; settingsText2.fontSize = 42;
             settingsText.text = "设置"; settingsText.font = chineseFont; settingsText.fontSize = 66;
             informationText.text = "资讯"; informationText.font = chineseFont; informationText.fontSize = 55;
             achievementsText.text = "成就"; achievementsText.font = chineseFont; achievementsText.fontSize = 48;
@@ -13569,13 +13636,14 @@ public class Localization : MonoBehaviour
             bucketCloseText.text = "나가기";
 
             miscText.font = koreanFont; miscText.fontSize = 130;
-            bucketClaimText.font = koreanFont; miscText.fontSize = 42;
-            bucketCloseText.font = koreanFont; miscText.fontSize = 42;
+            bucketClaimText.font = koreanFont; bucketClaimText.fontSize = 30;
+            bucketCloseText.font = koreanFont; bucketCloseText.fontSize = 42;
 
             findTheCookie = "쿠키를 찾으세요!";
             cookieCliker = "쿠키 클리커!";
             useTheChicken = "닭을 사용하세요";
 
+            settingsText2.text = "설정"; settingsText2.font = koreanFont; settingsText2.fontSize = 42;
             settingsText.text = "설정"; settingsText.font = koreanFont; settingsText.fontSize = 66;
             informationText.text = "정보"; informationText.font = koreanFont; informationText.fontSize = 55;
             achievementsText.text = "업적"; achievementsText.font = koreanFont; achievementsText.fontSize = 48;

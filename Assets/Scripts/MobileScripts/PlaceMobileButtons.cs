@@ -932,6 +932,21 @@ public class PlaceMobileButtons : MonoBehaviour
     {
         for (int i = 0; i < shopInfoText.Length; i++)
         {
+            if (Localization.EnglishLanguageChosen != 1)
+            {
+                shopIem1Text.lineSpacing = -35f;
+                shopInfoText[i].lineSpacing = -35f;
+            }
+            else
+            {
+                shopIem1Text.lineSpacing = -60f;
+                shopInfoText[i].lineSpacing = -60f;
+            }
+        }
+
+
+        for (int i = 0; i < shopInfoText.Length; i++)
+        {
             if (Localization.JapaneseLanguageChosen == 1) { shopInfoText[i].font = japaneseFont; shopIem1Text.font = japaneseFont; }
             if (Localization.ChineseLanguageChosen == 1) { shopInfoText[i].font = chinseFont; shopIem1Text.font = chinseFont; }
             if (Localization.KoreanLanguageChosen == 1) { shopInfoText[i].font = koreanFont; shopIem1Text.font = koreanFont; }
@@ -1041,8 +1056,20 @@ public class PlaceMobileButtons : MonoBehaviour
             cursorInfo2.text = Localization.info;
             cursorInfo3.text = Localization.info;
 
-            if (Localization.EnglishLanguageChosen != 1 || Localization.RussianLanguageChosen != 1) { cursorInfoText[i].lineSpacing = -35f; }
-            else { cursorInfoText[i].lineSpacing = -60f; }
+            if (Localization.EnglishLanguageChosen != 1) 
+            {
+                cursorInfo1.lineSpacing = -35f;
+                cursorInfo2.lineSpacing = -35f;
+                cursorInfo3.lineSpacing = -35f;
+                cursorInfoText[i].lineSpacing = -35f; 
+            }
+            else
+            { 
+                cursorInfoText[i].lineSpacing = -60f;
+                cursorInfo1.lineSpacing = -60f;
+                cursorInfo2.lineSpacing = -60f;
+                cursorInfo3.lineSpacing = -60f;
+            }
         }
 
         //Set text
