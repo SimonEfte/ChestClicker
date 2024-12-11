@@ -18,7 +18,7 @@ public class PlaceMobileButtons : MonoBehaviour
     public GameObject firstTimePlayingScreen;
     public GameObject testObject1, testObject2, testObject3;
     public GameObject scrollView;
-    public GameObject googlePlayBtn;
+    public GameObject googlePlayBtn, appStoreBtn;
 
     IEnumerator Waititin()
     {
@@ -36,10 +36,11 @@ public class PlaceMobileButtons : MonoBehaviour
 
     public void Awake()
     {
-        isMobile = true;
+        isMobile = false;
         if(isMobile == true)
         {
             googlePlayBtn.SetActive(false);
+            appStoreBtn.SetActive(false);
             string deviceModel = SystemInfo.deviceModel;
 
             //phoneText.text = deviceModel;
@@ -94,6 +95,10 @@ public class PlaceMobileButtons : MonoBehaviour
             for (int i = 0; i < shopInfoBoxes.Length; i++)
             {
                 shopInfoBoxes[i].SetActive(false);
+            }
+
+            for (int i = 0; i < cursorInfoBoxes.Length; i++)
+            {
                 cursorInfoBoxes[i].SetActive(false);
             }
         }

@@ -1508,38 +1508,38 @@ public class UseConsumable : MonoBehaviour, IDataPersistence
         {
             relicPermaTreasureBuff += (0.05f + RareTreasures.presentTreasurBuff + SkillTree.special7RelicTreasure);
 
-            chestText.GetComponent<TextMeshProUGUI>().text = (0.05f + RareTreasures.presentTreasurBuff + SkillTree.special7RelicTreasure).ToString("F2") + Localization.treasureDropChance;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + (0.05f + RareTreasures.presentTreasurBuff + SkillTree.special7RelicTreasure).ToString("F2") + Localization.treasureDropChance;
             SpawnRewards.changeDropChanceValues = true;
         }
         else if (randomRelicBuff <= 8)
         {
             relicPermaCritChance += (0.2f + RareTreasures.presentCritChanceBuff + SkillTree.special7RelicCritChance);
-            chestText.GetComponent<TextMeshProUGUI>().text = (0.2f + RareTreasures.presentCritChanceBuff + SkillTree.special7RelicCritChance).ToString("F2") + Localization.critChanceString;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + (0.2f + RareTreasures.presentCritChanceBuff + SkillTree.special7RelicCritChance).ToString("F2") + Localization.critChanceString;
         }
         else if (randomRelicBuff <= 25)
         {
             relicPermaCritDamage += (0.75f + RareTreasures.presentCriDamageBuff + SkillTree.special7RelicCritDamage);
-            chestText.GetComponent<TextMeshProUGUI>().text = ((0.75f + RareTreasures.presentCriDamageBuff + SkillTree.special7RelicCritDamage) * 100).ToString("F0") + Localization.critDamageString;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + ((0.75f + RareTreasures.presentCriDamageBuff + SkillTree.special7RelicCritDamage) * 100).ToString("F0") + Localization.critDamageString;
         }
         else if (randomRelicBuff <= 40)
         {
             relicPermaPassiveDamage += (0.35f + RareTreasures.presentPassiveDamageBuff + SkillTree.special7RelicPassiveDamage);
-            chestText.GetComponent<TextMeshProUGUI>().text = ((0.35f + RareTreasures.presentPassiveDamageBuff + SkillTree.special7RelicPassiveDamage) * 100).ToString("F0") + Localization.passiveDamageString;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + ((0.35f + RareTreasures.presentPassiveDamageBuff + SkillTree.special7RelicPassiveDamage) * 100).ToString("F0") + Localization.passiveDamageString;
         }
         else if (randomRelicBuff <= 55)
         {
             relicPermaActiveDamage += (0.50f + RareTreasures.presentActiveDamageBuff + SkillTree.special7RelicActiveDamage);
-            chestText.GetComponent<TextMeshProUGUI>().text = ((0.50f + RareTreasures.presentActiveDamageBuff + SkillTree.special7RelicActiveDamage) * 100).ToString("F0") + Localization.activeDamageScring;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + ((0.50f + RareTreasures.presentActiveDamageBuff + SkillTree.special7RelicActiveDamage) * 100).ToString("F0") + Localization.activeDamageScring;
         }
         else if (randomRelicBuff <= 75)
         {
             relicPermaXPBuff += (0.35f + RareTreasures.presentXPBuff + SkillTree.special7RelicXP);
-            chestText.GetComponent<TextMeshProUGUI>().text = ((0.35f + RareTreasures.presentXPBuff + SkillTree.special7RelicXP) * 100).ToString("F0") + Localization.xp;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + ((0.35f + RareTreasures.presentXPBuff + SkillTree.special7RelicXP) * 100).ToString("F0") + Localization.xp;
         }
         else
         {
             relicPermaGoldBuff += (0.35f + RareTreasures.presentGoldBuff + SkillTree.special7RelicTGOLD);
-            chestText.GetComponent<TextMeshProUGUI>().text = ((0.35f + RareTreasures.presentGoldBuff + SkillTree.special7RelicTGOLD) * 100).ToString("F0") + Localization.goldPercentString;
+            chestText.GetComponent<TextMeshProUGUI>().text = "+" + ((0.35f + RareTreasures.presentGoldBuff + SkillTree.special7RelicTGOLD) * 100).ToString("F0") + Localization.goldPercentString;
         }
         yield return new WaitForSeconds(1.2f);
         if (PlaceMobileButtons.isMobile == true) { chestText.transform.SetParent(originalParent); }

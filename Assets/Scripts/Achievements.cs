@@ -149,130 +149,130 @@ public class Achievements : MonoBehaviour, IDataPersistence
         }
 
 
-        if (achSaves[0] == 1) { goldCoinAch1.SetActive(true); }
-        if (achSaves[1] == 1) { goldCoinAch2.SetActive(true); }
-        if (achSaves[2] == 1) { goldCoinAch3.SetActive(true); }
-        if (achSaves[3] == 1) { goldCoinAch4.SetActive(true); }
-        if (achSaves[4] == 1) { goldAmountAch1.SetActive(true); }
-        if (achSaves[5] == 1) { goldAmountAch2.SetActive(true); }
-        if (achSaves[6] == 1) { goldAmountAch3.SetActive(true); }
-        if (achSaves[7] == 1) { goldAmountAch4.SetActive(true); }
-        if (achSaves[8] == 1) { goldAmountAch5.SetActive(true); }
-        if (achSaves[9] == 1) { goldAmountAch6.SetActive(true); }
-        if (achSaves[10] == 1) { goldAmountAch7.SetActive(true); }
-        if (achSaves[11] == 1) { goldAmountAch8.SetActive(true); }
-        if (achSaves[12] == 1) { goldAmountAch9.SetActive(true); }
-        if (achSaves[13] == 1) { goldAmountAch10.SetActive(true); }
-        if (achSaves[14] == 1) { goldAmountAch11.SetActive(true); }
-        if (achSaves[15] == 1) { goldAmountAch12.SetActive(true); }
-        if (achSaves[16] == 1) { goldCoin5X1.SetActive(true); }
-        if (achSaves[17] == 1) { goldCoin5X2.SetActive(true); }
-        if (achSaves[18] == 1) { goldCoin5X3.SetActive(true); }
-        if (achSaves[19] == 1) { goldCoin10X1.SetActive(true); }
-        if (achSaves[20] == 1) { goldCoin10X2.SetActive(true); }
-        if (achSaves[21] == 1) { goldCoin10X3.SetActive(true); }
-        if (achSaves[22] == 1) { clickSpawn1.SetActive(true); }
-        if (achSaves[23] == 1) { clickSpawn2.SetActive(true); }
-        if (achSaves[24] == 1) { clickSpawn3.SetActive(true); }
-        if (achSaves[25] == 1) { treasure1.SetActive(true); }
-        if (achSaves[26] == 1) { treasure2.SetActive(true); }
-        if (achSaves[27] == 1) { treasure3.SetActive(true); }
-        if (achSaves[28] == 1) { treasure4.SetActive(true); }
-        if (achSaves[29] == 1) { treasure5.SetActive(true); }
-        if (achSaves[30] == 1) { common100.SetActive(true); }
-        if (achSaves[31] == 1) { uncommon100.SetActive(true); }
-        if (achSaves[32] == 1) { rare100.SetActive(true); }
-        if (achSaves[33] == 1) { veryRare100.SetActive(true); }
-        if (achSaves[34] == 1) { extremelyRare100.SetActive(true); }
-        if (achSaves[35] == 1) { legendary100.SetActive(true); }
-        if (achSaves[36] == 1) { treasureClick1.SetActive(true); }
-        if (achSaves[37] == 1) { treasureClick2.SetActive(true); }
-        if (achSaves[38] == 1) { treasureClick3.SetActive(true); }
-        if (achSaves[39] == 1) { treasuresDoubled.SetActive(true); }
-        if (achSaves[40] == 1) { rareTreasure1.SetActive(true); }
-        if (achSaves[41] == 1) { rareTreasure2.SetActive(true); }
-        if (achSaves[42] == 1) { rareTreasure3.SetActive(true); }
-        if (achSaves[43] == 1) { rareTreasure4.SetActive(true); }
-        if (achSaves[44] == 1) { rareTreasure5.SetActive(true); }
-        if (achSaves[45] == 1) { findCookie.SetActive(true); }
-        if (achSaves[46] == 1) { clickCookie.SetActive(true); }
-        if (achSaves[47] == 1) { prestige1.SetActive(true); }
-        if (achSaves[48] == 1) { prestige2.SetActive(true); }
-        if (achSaves[49] == 1) { prestige3.SetActive(true); }
-        if (achSaves[50] == 1) { purchasePrestigeUpgrade1.SetActive(true); }
-        if (achSaves[51] == 1) { purchasePrestigeUpgrade2.SetActive(true); }
-        if (achSaves[52] == 1) { purchasePrestigeUpgrade3.SetActive(true); }
-        if (achSaves[53] == 1) { purchasePrestigeUpgrade4.SetActive(true); }
-        if (achSaves[54] == 1) { purchasePrestigeUpgrade5.SetActive(true); }
-        if (achSaves[55] == 1) { allClicker.SetActive(true); }
-        if (achSaves[56] == 1) { allLounger.SetActive(true); }
-        if (achSaves[57] == 1) { allPirate.SetActive(true); }
-        if (achSaves[58] == 1) { allHoarder.SetActive(true); }
-        if (achSaves[59] == 1) { purchaseLoot.SetActive(true); }
-        if (achSaves[60] == 1) { purchaseGolden.SetActive(true); }
-        if (achSaves[61] == 1) { purchaseScroll.SetActive(true); }
-        if (achSaves[62] == 1) { purchaseKey.SetActive(true); }
-        if (achSaves[63] == 1) { purchaseElixir.SetActive(true); }
-        if (achSaves[64] == 1) { purchaseRelic.SetActive(true); }
-        if (achSaves[65] == 1) { openChests1.SetActive(true); }
-        if (achSaves[66] == 1) { openChests2.SetActive(true); }
-        if (achSaves[67] == 1) { openChests3.SetActive(true); }
-        if (achSaves[68] == 1) { openChests4.SetActive(true); }
-        if (achSaves[69] == 1) { openChests5.SetActive(true); }
-        if (achSaves[70] == 1) { openChests6.SetActive(true); }
-        if (achSaves[71] == 1) { purchaseChest2.SetActive(true); }
-        if (achSaves[72] == 1) { purchaseChest5.SetActive(true); }
-        if (achSaves[73] == 1) { purchaseChest8.SetActive(true); }
-        if (achSaves[74] == 1) { purchaseChest12.SetActive(true); }
-        if (achSaves[75] == 1) { purchaseChest15.SetActive(true); }
-        if (achSaves[76] == 1) { purchaseChest20.SetActive(true); }
-        if (achSaves[77] == 1) { purchaseChest24.SetActive(true); }
-        if (achSaves[78] == 1) { purchaseChest27.SetActive(true); }
-        if (achSaves[79] == 1) { openFinalChest.SetActive(true); }
-        if (achSaves[80] == 1) { openReinforcedChest1.SetActive(true); }
-        if (achSaves[81] == 1) { openReinforcedChest2.SetActive(true); }
-        if (achSaves[82] == 1) { openReinforcedChest3.SetActive(true); }
-        if (achSaves[83] == 1) { openReinforcedChest4.SetActive(true); }
-        if (achSaves[84] == 1) { skillPoints1.SetActive(true); }
-        if (achSaves[85] == 1) { skillPoints2.SetActive(true); }
-        if (achSaves[86] == 1) { skillPoints3.SetActive(true); }
-        if (achSaves[87] == 1) { skillPoints4.SetActive(true); }
-        if (achSaves[88] == 1) { level10.SetActive(true); }
-        if (achSaves[89] == 1) { level25.SetActive(true); }
-        if (achSaves[90] == 1) { level50.SetActive(true); }
-        if (achSaves[91] == 1) { level100.SetActive(true); }
+        if (achSaves[0] == 1) { goldCoinAch1.SetActive(true); CheckAchTrigger("goldCoin25"); }
+        if (achSaves[1] == 1) { goldCoinAch2.SetActive(true); CheckAchTrigger("goldCoin1000"); }
+        if (achSaves[2] == 1) { goldCoinAch3.SetActive(true); CheckAchTrigger("goldCoin100000"); }
+        if (achSaves[3] == 1) { goldCoinAch4.SetActive(true); CheckAchTrigger("goldCoin1Million"); }
+        if (achSaves[4] == 1) { goldAmountAch1.SetActive(true); CheckAchTrigger("gold100"); }
+        if (achSaves[5] == 1) { goldAmountAch2.SetActive(true); CheckAchTrigger("gold100000"); }
+        if (achSaves[6] == 1) { goldAmountAch3.SetActive(true); CheckAchTrigger("gold1Million"); }
+        if (achSaves[7] == 1) { goldAmountAch4.SetActive(true); CheckAchTrigger("gold1Billion"); }
+        if (achSaves[8] == 1) { goldAmountAch5.SetActive(true); CheckAchTrigger("gold1Trillion"); }
+        if (achSaves[9] == 1) { goldAmountAch6.SetActive(true); CheckAchTrigger("gold1Quadrillion"); }
+        if (achSaves[10] == 1) { goldAmountAch7.SetActive(true); CheckAchTrigger("gold1Quintillion"); }
+        if (achSaves[11] == 1) { goldAmountAch8.SetActive(true); CheckAchTrigger("gold1Sextillion"); }
+        if (achSaves[12] == 1) { goldAmountAch9.SetActive(true); CheckAchTrigger("gold1Septillion"); }
+        if (achSaves[13] == 1) { goldAmountAch10.SetActive(true); CheckAchTrigger("gold1Octillion"); }
+        if (achSaves[14] == 1) { goldAmountAch11.SetActive(true); CheckAchTrigger("gold1Nonillion"); }
+        if (achSaves[15] == 1) { goldAmountAch12.SetActive(true); CheckAchTrigger("gold1Decillion"); }
+        if (achSaves[16] == 1) { goldCoin5X1.SetActive(true); CheckAchTrigger("goldCoin5X1"); }
+        if (achSaves[17] == 1) { goldCoin5X2.SetActive(true); CheckAchTrigger("goldCoin5X1000"); }
+        if (achSaves[18] == 1) { goldCoin5X3.SetActive(true); CheckAchTrigger("goldCoin5X50000"); }
+        if (achSaves[19] == 1) { goldCoin10X1.SetActive(true); CheckAchTrigger("goldCoin10X1"); }
+        if (achSaves[20] == 1) { goldCoin10X2.SetActive(true); CheckAchTrigger("goldCoin10X1000"); }
+        if (achSaves[21] == 1) { goldCoin10X3.SetActive(true); CheckAchTrigger("goldCoin10X25000"); }
+        if (achSaves[22] == 1) { clickSpawn1.SetActive(true); CheckAchTrigger("coinClicks10"); }
+        if (achSaves[23] == 1) { clickSpawn2.SetActive(true); CheckAchTrigger("coinClicks100"); }
+        if (achSaves[24] == 1) { clickSpawn3.SetActive(true); CheckAchTrigger("coinClicks1000"); }
+        if (achSaves[25] == 1) { treasure1.SetActive(true); CheckAchTrigger("treasure1"); }
+        if (achSaves[26] == 1) { treasure2.SetActive(true); CheckAchTrigger("treasure100"); }
+        if (achSaves[27] == 1) { treasure3.SetActive(true); CheckAchTrigger("treasure1000"); }
+        if (achSaves[28] == 1) { treasure4.SetActive(true); CheckAchTrigger("treasure10000"); }
+        if (achSaves[29] == 1) { treasure5.SetActive(true); CheckAchTrigger("treasure50000"); }
+        if (achSaves[30] == 1) { common100.SetActive(true); CheckAchTrigger("common100"); }
+        if (achSaves[31] == 1) { uncommon100.SetActive(true); CheckAchTrigger("uncommon100"); }
+        if (achSaves[32] == 1) { rare100.SetActive(true); CheckAchTrigger("rare100"); }
+        if (achSaves[33] == 1) { veryRare100.SetActive(true); CheckAchTrigger("veryRare100"); }
+        if (achSaves[34] == 1) { extremelyRare100.SetActive(true); CheckAchTrigger("extremelyRare100"); }
+        if (achSaves[35] == 1) { legendary100.SetActive(true); CheckAchTrigger("legendary100"); }
+        if (achSaves[36] == 1) { treasureClick1.SetActive(true); CheckAchTrigger("treasureClicks10"); }
+        if (achSaves[37] == 1) { treasureClick2.SetActive(true); CheckAchTrigger("treasureClicks100"); }
+        if (achSaves[38] == 1) { treasureClick3.SetActive(true); CheckAchTrigger("treasureClicks1000"); }
+        if (achSaves[39] == 1) { treasuresDoubled.SetActive(true); CheckAchTrigger("treasureDouble100"); }
+        if (achSaves[40] == 1) { rareTreasure1.SetActive(true); CheckAchTrigger("RareTresure1"); }
+        if (achSaves[41] == 1) { rareTreasure2.SetActive(true); CheckAchTrigger("RareTresure3"); }
+        if (achSaves[42] == 1) { rareTreasure3.SetActive(true); CheckAchTrigger("RareTresure5"); }
+        if (achSaves[43] == 1) { rareTreasure4.SetActive(true); CheckAchTrigger("RareTresure13"); }
+        if (achSaves[44] == 1) { rareTreasure5.SetActive(true); CheckAchTrigger("RareTresure21"); }
+        if (achSaves[45] == 1) { findCookie.SetActive(true); CheckAchTrigger("FindCookie"); }
+        if (achSaves[46] == 1) { clickCookie.SetActive(true); CheckAchTrigger("ClickCookie"); }
+        if (achSaves[47] == 1) { prestige1.SetActive(true); CheckAchTrigger("Prestige"); }
+        if (achSaves[48] == 1) { prestige2.SetActive(true); CheckAchTrigger("Prestige5"); }
+        if (achSaves[49] == 1) { prestige3.SetActive(true); CheckAchTrigger("Prestige10"); }
+        if (achSaves[50] == 1) { purchasePrestigeUpgrade1.SetActive(true); CheckAchTrigger("PrestigeUpgrades5"); }
+        if (achSaves[51] == 1) { purchasePrestigeUpgrade2.SetActive(true); CheckAchTrigger("PrestigeUpgrades15"); }
+        if (achSaves[52] == 1) { purchasePrestigeUpgrade3.SetActive(true); CheckAchTrigger("PrestigeUpgrades25"); }
+        if (achSaves[53] == 1) { purchasePrestigeUpgrade4.SetActive(true); CheckAchTrigger("PrestigeUpgrades40"); }
+        if (achSaves[54] == 1) { purchasePrestigeUpgrade5.SetActive(true); CheckAchTrigger("AllPrestigeUpgrades"); }
+        if (achSaves[55] == 1) { allClicker.SetActive(true); CheckAchTrigger("PurchaseClicker"); }
+        if (achSaves[56] == 1) { allLounger.SetActive(true); CheckAchTrigger("PurchaseLounger"); }
+        if (achSaves[57] == 1) { allPirate.SetActive(true); CheckAchTrigger("PurchasePirate"); }
+        if (achSaves[58] == 1) { allHoarder.SetActive(true); CheckAchTrigger("PurchaseHoarder"); }
+        if (achSaves[59] == 1) { purchaseLoot.SetActive(true); CheckAchTrigger("PurchaseLootPotion"); }
+        if (achSaves[60] == 1) { purchaseGolden.SetActive(true); CheckAchTrigger("PurchaseGoldeTouch"); }
+        if (achSaves[61] == 1) { purchaseScroll.SetActive(true); CheckAchTrigger("PurchaseScroll"); }
+        if (achSaves[62] == 1) { purchaseKey.SetActive(true); CheckAchTrigger("PurchaseKey"); }
+        if (achSaves[63] == 1) { purchaseElixir.SetActive(true); CheckAchTrigger("PurchaseElixir"); }
+        if (achSaves[64] == 1) { purchaseRelic.SetActive(true); CheckAchTrigger("PurchaseRelic"); }
+        if (achSaves[65] == 1) { openChests1.SetActive(true); CheckAchTrigger("Open1Chest"); }
+        if (achSaves[66] == 1) { openChests2.SetActive(true); CheckAchTrigger("Open100Chests"); }
+        if (achSaves[67] == 1) { openChests3.SetActive(true); CheckAchTrigger("Open1000Chests"); }
+        if (achSaves[68] == 1) { openChests4.SetActive(true); CheckAchTrigger("Open10000Chests"); }
+        if (achSaves[69] == 1) { openChests5.SetActive(true); CheckAchTrigger("Open100000Chests"); }
+        if (achSaves[70] == 1) { openChests6.SetActive(true); CheckAchTrigger("Open250000Chests"); }
+        if (achSaves[71] == 1) { purchaseChest2.SetActive(true); CheckAchTrigger("PurchaseChest2"); }
+        if (achSaves[72] == 1) { purchaseChest5.SetActive(true); CheckAchTrigger("PurchaseChest5"); }
+        if (achSaves[73] == 1) { purchaseChest8.SetActive(true); CheckAchTrigger("PurchaseChest8"); }
+        if (achSaves[74] == 1) { purchaseChest12.SetActive(true); CheckAchTrigger("PurchaseChest12"); }
+        if (achSaves[75] == 1) { purchaseChest15.SetActive(true); CheckAchTrigger("PurchaseChest15"); }
+        if (achSaves[76] == 1) { purchaseChest20.SetActive(true); CheckAchTrigger("PurchaseChest20"); }
+        if (achSaves[77] == 1) { purchaseChest24.SetActive(true); CheckAchTrigger("PurchaseChest24"); }
+        if (achSaves[78] == 1) { purchaseChest27.SetActive(true); CheckAchTrigger("PurchaseChestFINAL"); }
+        if (achSaves[79] == 1) { openFinalChest.SetActive(true); CheckAchTrigger("OpenLastChest"); }
+        if (achSaves[80] == 1) { openReinforcedChest1.SetActive(true); CheckAchTrigger("Open1Reinforced"); }
+        if (achSaves[81] == 1) { openReinforcedChest2.SetActive(true); CheckAchTrigger("Open100Reinforced"); }
+        if (achSaves[82] == 1) { openReinforcedChest3.SetActive(true); CheckAchTrigger("Open1000Reinforced"); }
+        if (achSaves[83] == 1) { openReinforcedChest4.SetActive(true); CheckAchTrigger("Open10000Reinfoced"); }
+        if (achSaves[84] == 1) { skillPoints1.SetActive(true); CheckAchTrigger("SkillPoints50"); }
+        if (achSaves[85] == 1) { skillPoints2.SetActive(true); CheckAchTrigger("SkillPoints500"); }
+        if (achSaves[86] == 1) { skillPoints3.SetActive(true); CheckAchTrigger("SkillPoints1000"); }
+        if (achSaves[87] == 1) { skillPoints4.SetActive(true); CheckAchTrigger("SkillPoints10000"); }
+        if (achSaves[88] == 1) { level10.SetActive(true); CheckAchTrigger("level10"); }
+        if (achSaves[89] == 1) { level25.SetActive(true); CheckAchTrigger("level25"); }
+        if (achSaves[90] == 1) { level50.SetActive(true); CheckAchTrigger("level50"); }
+        if (achSaves[91] == 1) { level100.SetActive(true); CheckAchTrigger("level100"); }
 
         //New
-        if (newAch1Novemdecillion == 1) { goldAmountAch13.SetActive(true); }
-        if (newAch100EnchantedChest == 1) { enchantedGoldenChest100.SetActive(true); }
-        if (newAch100BossChest == 1) { bossChest100.SetActive(true); }
-        if (newAchLevel200 == 1) { level200.SetActive(true); }
-        if (newAchAllAdventurer == 1) { allAdventurer.SetActive(true); }
-        if (newAchEnchantedHammer == 1) { purchaseEnchantedHammer.SetActive(true); }
-        if (newAchPurchaseChest32 == 1) { purchaseChest32.SetActive(true); }
-        if (newAch25XGoldCoin1000 == 1) { goldCoin25X.SetActive(true); }
+        if (newAch1Novemdecillion == 1) { goldAmountAch13.SetActive(true); CheckAchTrigger("Novemdecillion"); }
+        if (newAch100EnchantedChest == 1) { enchantedGoldenChest100.SetActive(true); CheckAchTrigger("enchanted100"); }
+        if (newAch100BossChest == 1) { bossChest100.SetActive(true); CheckAchTrigger("bossChest100"); }
+        if (newAchLevel200 == 1) { level200.SetActive(true); CheckAchTrigger("level200"); }
+        if (newAchAllAdventurer == 1) { allAdventurer.SetActive(true); CheckAchTrigger("allAdventure"); }
+        if (newAchEnchantedHammer == 1) { purchaseEnchantedHammer.SetActive(true); CheckAchTrigger("enchantedHammer"); }
+        if (newAchPurchaseChest32 == 1) { purchaseChest32.SetActive(true); CheckAchTrigger("purchaseChest32"); }
+        if (newAch25XGoldCoin1000 == 1) { goldCoin25X.SetActive(true); CheckAchTrigger("goldcoin25X1000"); }
 
         //New after big update
-        if (newAch100XGoldCoin == 1) { goldCoin100X.SetActive(true); }
-        if (newAch1Undecillion == 1) { goldUndecillion.SetActive(true); }
-        if (newAch1Duodecillion == 1) { goldDuodecillion.SetActive(true); }
-        if (newAch1Tredecillion == 1) { goldTredecillion.SetActive(true); }
-        if (newAch1Quattuordecillion == 1) { goldQuattuordecillion.SetActive(true); }
-        if (newAch1Quindecillion == 1) { goldQuindecillion.SetActive(true); }
-        if (newAch1Sexdecillion == 1) { goldSexdecillion.SetActive(true); }
-        if (newAch1Septendecillion == 1) { goldSeptendecillion.SetActive(true); }
-        if (newAch1Octodecillion == 1) { goldOctodecillion.SetActive(true); }
-        if (newAchLevel150 == 1) { level150.SetActive(true); }
-        if (newAch20KSkillPoints == 1) { skillPoints20K.SetActive(true); }
-        if (newAch2MillionGoldCoins == 1) { goldCoin2Million.SetActive(true); }
-        if (newAch100KTreasures == 1) { treasure100K.SetActive(true); }
-        if (newAch100Ultra == 1) { ultra100.SetActive(true); }
-        if (newAch100Mythic == 1) { mythic100.SetActive(true); }
-        if (newAch100Eternal == 1) { eternal100.SetActive(true); }
-        if (newAch2500Reinforced == 1) { reinforcedChests2500.SetActive(true); }
-        if (newAchUseChicken == 1) { useChicken.SetActive(true); }
-        if (newAchChest37 == 1) { purchaseChest37.SetActive(true); }
-        if (newAch5X250KDrop == 1) { goldCoin5X250K.SetActive(true); }
+        if (newAch100XGoldCoin == 1) { goldCoin100X.SetActive(true); CheckAchTrigger("coldCoin100X1"); }
+        if (newAch1Undecillion == 1) { goldUndecillion.SetActive(true); CheckAchTrigger("undecillion"); }
+        if (newAch1Duodecillion == 1) { goldDuodecillion.SetActive(true); CheckAchTrigger("duodecillion"); }
+        if (newAch1Tredecillion == 1) { goldTredecillion.SetActive(true); CheckAchTrigger("Tredecillion"); }
+        if (newAch1Quattuordecillion == 1) { goldQuattuordecillion.SetActive(true); CheckAchTrigger("Quattuordecillion"); }
+        if (newAch1Quindecillion == 1) { goldQuindecillion.SetActive(true); CheckAchTrigger("Quindecillion"); }
+        if (newAch1Sexdecillion == 1) { goldSexdecillion.SetActive(true); CheckAchTrigger("Sexdecillion"); }
+        if (newAch1Septendecillion == 1) { goldSeptendecillion.SetActive(true); CheckAchTrigger("Septendecillion"); }
+        if (newAch1Octodecillion == 1) { goldOctodecillion.SetActive(true); CheckAchTrigger("Octodecillion"); }
+        if (newAchLevel150 == 1) { level150.SetActive(true); CheckAchTrigger("level150"); }
+        if (newAch20KSkillPoints == 1) { skillPoints20K.SetActive(true); CheckAchTrigger("skillPoints2000"); }
+        if (newAch2MillionGoldCoins == 1) { goldCoin2Million.SetActive(true); CheckAchTrigger("goldCoins2Mill"); }
+        if (newAch100KTreasures == 1) { treasure100K.SetActive(true); CheckAchTrigger("treasures100K"); }
+        if (newAch100Ultra == 1) { ultra100.SetActive(true); CheckAchTrigger("ultra100"); }
+        if (newAch100Mythic == 1) { mythic100.SetActive(true); CheckAchTrigger("mythic100"); }
+        if (newAch100Eternal == 1) { eternal100.SetActive(true); CheckAchTrigger("eternal100"); }
+        if (newAch2500Reinforced == 1) { reinforcedChests2500.SetActive(true); CheckAchTrigger("reinforced2500"); }
+        if (newAchUseChicken == 1) { useChicken.SetActive(true); CheckAchTrigger("useChicken"); }
+        if (newAchChest37 == 1) { purchaseChest37.SetActive(true); CheckAchTrigger("chest37"); }
+        if (newAch5X250KDrop == 1) { goldCoin5X250K.SetActive(true); CheckAchTrigger("goldCoin5X250K"); }
     }
 
 
@@ -530,18 +530,31 @@ public class Achievements : MonoBehaviour, IDataPersistence
     }
     #endregion
 
+    public void CheckAchTrigger(string achName)
+    {
+        if (Facepunch.noSteamInt == true) { return; }
+        if (PlaceMobileButtons.isMobile == true) { return; }
+
+        var ach = new Steamworks.Data.Achievement(achName);
+        if (ach.State == false)
+        {
+            ach.Trigger();
+        }
+        ach.Trigger();
+    }
+
 
     public void TriggerAch(string achName)
     {
         if (Facepunch.noSteamInt == true) { return; }
         if (PlaceMobileButtons.isMobile == true) { return; }
 
-        //var ach = new Steamworks.Data.Achievement(achName);
-        //if (ach.State == false)
-        //{
-        //    ach.Trigger();
-        // }
-        //ach.Trigger();
+        var ach = new Steamworks.Data.Achievement(achName);
+        if (ach.State == false)
+        {
+            ach.Trigger();
+         }
+        ach.Trigger();
     }
 
 

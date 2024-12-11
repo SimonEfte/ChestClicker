@@ -16,7 +16,7 @@ public class Facepunch : MonoBehaviour
     {
         if(noSteamInt == false)
         {
-            //Steamworks.SteamClient.Init(2422090);
+            Steamworks.SteamClient.Init(2422090);
         }
     }
 
@@ -24,7 +24,7 @@ public class Facepunch : MonoBehaviour
     {
         if (noSteamInt == false)
         {
-            //Steamworks.SteamClient.RunCallbacks();
+            Steamworks.SteamClient.RunCallbacks();
         }
     }
 
@@ -32,7 +32,7 @@ public class Facepunch : MonoBehaviour
     {
         if (noSteamInt == false)
         {
-            //Steamworks.SteamClient.Shutdown();
+            Steamworks.SteamClient.Shutdown();
         }
     }
     

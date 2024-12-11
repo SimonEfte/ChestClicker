@@ -203,5 +203,8 @@ public class SettingsOptions : MonoBehaviour
     {
         Application.OpenURL("https://play.google.com/store/apps/details?id=com.eagleeyegames.treasurechestclickeridle");
     }
-
+    public void AppStoreLink()
+    {
+        Application.OpenURL("https://apps.apple.com/us/app/treasure-chest-clicker/id6738999003");
+    }
 }
